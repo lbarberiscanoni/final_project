@@ -102,34 +102,20 @@ table {
       padding: 6px; }
 
 .menu {
-  text-decoration: none;
-  -moz-box-sizing: border-box;
-  /* Firefox 1, probably can drop this */
-  -webkit-box-sizing: border-box;
-  /* Safari 3-4, also probably droppable */
-  box-sizing: border-box;
-  /* Everything else */
-  border: 2px solid #308241;
-  border-radius: 3.5px;
-  background-color: #DBDBDF;
-  color: black;
-  font-size: 1.15em; }
+  cursor: pointer; }
 
-.drop_down {
-  height: 100%;
-  transition-duration: 1000ms; }
-
-nav ul li:nth-of-type(1) {
-  border-top: 2px solid #308241; }
-nav ul li {
-  height: 0;
+nav ul {
   background-color: #6DBE4E;
   font-size: 1.3em;
-  padding: 5px;
-  border-bottom: 2px solid #308241;
-  padding-left: 5%; }
-  nav ul li a {
-    color: black;
-    text-decoration: none; }
+  padding: 5px; }
+  nav ul li:nth-of-type(1) {
+    border-top: 2px solid #308241; }
+  nav ul li {
+    margin: auto 0;
+    border-bottom: 2px solid #308241;
+    padding-left: 5%; }
+    nav ul li a {
+      color: black;
+      text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

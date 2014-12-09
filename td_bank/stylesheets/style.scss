@@ -105,25 +105,20 @@ $label: 1.25em;
 }
 
 .menu {
-	@include button;
-}
-
-.drop_down {
-	height: 100%;
-	transition-duration: 1000ms;
+	cursor: pointer;
 }
 
 nav {
 
 	ul {
+		@include segment;
 
 		li:nth-of-type(1) {
 			border-top: 2px solid $green1;
 		}
 
 		li {
-			height: 0;
-			@include segment;
+			margin: auto 0;
 			border-bottom: 2px solid $green1;
 			padding-left: 5%;
 
