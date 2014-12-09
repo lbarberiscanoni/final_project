@@ -1,0 +1,32 @@
+@import "reset";
+
+@mixin border-box {
+   -moz-box-sizing: border-box;   /* Firefox 1, probably can drop this */
+   -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;   /* Everything else */
+}
+
+$green1: #308241;
+
+$green2: #8BCE94;
+
+$green3: #16923B;
+
+$green4: #88C873;
+
+$green5: #6DBE4E;
+
+$green6: #68B180;
+
+$grey1: #9797A8;
+
+$grey2: #D5D5E0;
+
+$grey3: #BABAC2;
+
+$grey4: #DBDBDF;
+
+$grey5: #BABAC2;
+
+$grey6: #DBDBDF;
+
