@@ -46,17 +46,15 @@ table {
 
 /*Ignore the gross stuff above */
 .container {
-  width: 100%;
-  margin: 0 auto;
-  border: 1px solid black; }
+  margin: 0 auto; }
   .container .home_top {
-    border: 1px solid black;
     margin: 5px auto;
     text-align: center; }
     .container .home_top .header {
       border: 1px solid black;
       background-color: #6DBE4E;
-      font-size: 1.3em; }
+      font-size: 1.3em;
+      padding: 5px; }
   .container .login {
     -moz-box-sizing: border-box;
     /* Firefox 1, probably can drop this */
@@ -64,13 +62,14 @@ table {
     /* Safari 3-4, also probably droppable */
     box-sizing: border-box;
     /* Everything else */
-    width: 54%;
-    margin: 10px auto;
-    text-align: center; }
-    .container .login label:nth-of-type(2) {
-      margin-left: 2%; }
-    .container .login label, .container .login input {
-      margin: 8px auto; }
+    width: 47.5%;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid black; }
+    .container .login input {
+      margin: 10px auto; }
+    .container .login label {
+      font-size: 1.25em; }
     .container .login .log {
       text-decoration: none;
       -moz-box-sizing: border-box;
@@ -83,22 +82,24 @@ table {
       border-radius: 3.5px;
       background-color: #DBDBDF;
       color: black;
-      font-size: 1.1em;
+      font-size: 1.15em;
       padding: 4px 30px; }
-  .container .check_app {
-    text-decoration: none;
-    -moz-box-sizing: border-box;
-    /* Firefox 1, probably can drop this */
-    -webkit-box-sizing: border-box;
-    /* Safari 3-4, also probably droppable */
-    box-sizing: border-box;
-    /* Everything else */
-    border: 2px solid #308241;
-    border-radius: 3.5px;
-    background-color: #DBDBDF;
-    color: black;
-    font-size: 1.1em;
-    margin: 5px 28%;
-    padding: 6px; }
+    .container .login .check_app {
+      text-decoration: none;
+      -moz-box-sizing: border-box;
+      /* Firefox 1, probably can drop this */
+      -webkit-box-sizing: border-box;
+      /* Safari 3-4, also probably droppable */
+      box-sizing: border-box;
+      /* Everything else */
+      border: 2px solid #308241;
+      border-radius: 3.5px;
+      background-color: #DBDBDF;
+      color: black;
+      font-size: 1.15em;
+      background-color: #68B180;
+      font-weight: bold;
+      border: 3px solid #308241;
+      padding: 6px; }
 
 /*# sourceMappingURL=style.css.map */

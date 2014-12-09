@@ -13,7 +13,14 @@
 	border-radius: 3.5px;
 	background-color: $grey6;
 	color: black;
-	font-size: 1.1em;
+	font-size: 1.15em;
+}
+
+@mixin app_button {
+	@include button;
+	background-color: $green6;
+	font-weight: bold;
+	border: 3px solid $green1;
 }
 
 $green1: #308241;
@@ -42,13 +49,12 @@ $grey6: #DBDBDF;
 
 $principal: 1.3em;
 
-.container {
-	width: 100%;		
+$label: 1.25em;
+
+.container {	
 	margin: 0 auto;
-	border: 1px solid black;
 
 	.home_top {
-		border: 1px solid black;
 		margin: 5px auto;	
 		text-align: center;
 
@@ -56,34 +62,33 @@ $principal: 1.3em;
 			border: 1px solid black;
 			background-color: $green5;
 			font-size: $principal;
+			padding: 5px;
 		}
 	}
 
 	.login {
 		@include border-box;
-		width: 54%;
-		margin: 10px auto;
-		text-align: center;	
+		width: 47.5%;
+		margin: 20px auto;
+		text-align: center;
+		border: 1px solid black;	
 
-		label:nth-of-type(2) {
-			margin-left: 2%;
-		}
-
-		label, input{
-			margin: 8px auto;
+		input {
+			margin: 10px auto;
 		}	
+
+		label {
+			font-size: $label;
+		}
 
 		.log {
 			@include button;
 			padding: 4px 30px;
 		}
-	}
 
-
-	.check_app {
-		@include button;
-		margin: 5px 28%;
-		padding: 6px;
-
+		.check_app {
+			@include app_button;
+			padding: 6px;
+		}
 	}
 }
