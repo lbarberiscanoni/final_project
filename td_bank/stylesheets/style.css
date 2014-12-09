@@ -50,19 +50,50 @@ table {
   margin: 0 auto;
   border: 1px solid black; }
   .container .home_top {
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
     margin: 5px auto;
     text-align: center;
     border: 1px solid black; }
   .container .login {
-    width: 55%;
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    width: 54%;
     border: 1px solid black;
-    margin: 5px auto; }
+    margin: 5px auto;
+    text-align: center; }
     .container .login label:nth-of-type(2) {
       margin-left: 2%; }
-    .container .login label, .container .login input, .container .login a {
+    .container .login label, .container .login input {
       margin: 8px auto;
       border: 1px solid black; }
     .container .login a {
-      text-decoration: none; }
+      -moz-box-sizing: border-box;
+      /* Firefox 1, probably can drop this */
+      -webkit-box-sizing: border-box;
+      /* Safari 3-4, also probably droppable */
+      box-sizing: border-box;
+      /* Everything else */
+      margin: 5px;
+      border: 1px solid black; }
+  .container a {
+    text-decoration: none; }
+  .container .check_app {
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 1px solid black;
+    margin: 0 31.7%; }
 
 /*# sourceMappingURL=style.css.map */
