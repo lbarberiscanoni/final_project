@@ -23,6 +23,12 @@
 	border: 3px solid $green1;
 }
 
+@mixin segment {
+	background-color: $green5;
+	font-size: $principal;
+	padding: 5px;
+}
+
 $green1: #308241;
 
 $green2: #8BCE94;
@@ -51,6 +57,8 @@ $principal: 1.3em;
 
 $label: 1.25em;
 
+////// Login ////////
+
 .container {	
 	margin: 0 auto;
 
@@ -60,9 +68,7 @@ $label: 1.25em;
 
 		.header {
 			border: 1px solid black;
-			background-color: $green5;
-			font-size: $principal;
-			padding: 5px;
+			@include segment;
 		}
 	}
 
@@ -70,8 +76,7 @@ $label: 1.25em;
 		@include border-box;
 		width: 47.5%;
 		margin: 20px auto;
-		text-align: center;
-		border: 1px solid black;	
+		text-align: center;	
 
 		input {
 			margin: 10px auto;
@@ -92,3 +97,43 @@ $label: 1.25em;
 		}
 	}
 }
+
+////// Universal Systems ///////
+
+.top {
+	// position: fixed;
+}
+
+.menu {
+	@include button;
+}
+
+.drop_down {
+	height: 100%;
+	transition-duration: 1000ms;
+}
+
+nav {
+
+	ul {
+
+		li:nth-of-type(1) {
+			border-top: 2px solid $green1;
+		}
+
+		li {
+			height: 0;
+			@include segment;
+			border-bottom: 2px solid $green1;
+			padding-left: 5%;
+
+			a {
+				display: hidden;
+				color: black;
+				text-decoration: none;
+			}
+		}
+
+	}
+}
+
