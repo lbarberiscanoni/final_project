@@ -6,6 +6,16 @@
     box-sizing: border-box;   /* Everything else */
 }
 
+@mixin button {
+	text-decoration: none;
+	@include border-box;
+	border: 2px solid $green1;
+	border-radius: 3.5px;
+	background-color: $grey6;
+	color: black;
+	font-size: 1.1em;
+}
+
 $green1: #308241;
 
 $green2: #8BCE94;
@@ -30,23 +40,29 @@ $grey5: #BABAC2;
 
 $grey6: #DBDBDF;
 
+$principal: 1.3em;
+
 .container {
 	width: 100%;		
 	margin: 0 auto;
 	border: 1px solid black;
 
 	.home_top {
-		@include border-box;
+		border: 1px solid black;
 		margin: 5px auto;	
 		text-align: center;
-		border: 1px solid black;
+
+		.header {
+			border: 1px solid black;
+			background-color: $green5;
+			font-size: $principal;
+		}
 	}
 
 	.login {
 		@include border-box;
 		width: 54%;
-		border: 1px solid black;
-		margin: 5px auto;
+		margin: 10px auto;
 		text-align: center;	
 
 		label:nth-of-type(2) {
@@ -55,23 +71,19 @@ $grey6: #DBDBDF;
 
 		label, input{
 			margin: 8px auto;
-			border: 1px solid black;
 		}	
 
-		a {
-			@include border-box;
-			margin: 5px;
-			border: 1px solid black;
+		.log {
+			@include button;
+			padding: 4px 30px;
 		}
 	}
 
-	a {
-		text-decoration: none;
-	}
 
 	.check_app {
-		@include border-box;
-		border: 1px solid black;
-		margin: 0 31.7%;
+		@include button;
+		margin: 5px 28%;
+		padding: 6px;
+
 	}
 }
