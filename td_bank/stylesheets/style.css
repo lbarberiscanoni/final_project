@@ -45,5 +45,24 @@ table {
   border-spacing: 0; }
 
 /*Ignore the gross stuff above */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid black; }
+  .container .home_top {
+    margin: 5px auto;
+    text-align: center;
+    border: 1px solid black; }
+  .container .login {
+    width: 55%;
+    border: 1px solid black;
+    margin: 5px auto; }
+    .container .login label:nth-of-type(2) {
+      margin-left: 2%; }
+    .container .login label, .container .login input, .container .login a {
+      margin: 8px auto;
+      border: 1px solid black; }
+    .container .login a {
+      text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
