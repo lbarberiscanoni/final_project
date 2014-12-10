@@ -99,7 +99,9 @@ nav {
   box-sizing: border-box;
   /* Everything else */
   width: 100%;
-  height: 0; }
+  height: 0;
+  display: none;
+  position: fixed; }
   nav ul {
     background-color: #6DBE4E;
     padding: 5px;
@@ -115,20 +117,44 @@ nav {
         font-size: 1.25em; }
 
 h1 {
-  font-size: 2.42705em; }
+  font-size: 2.42705em;
+  margin: 0 auto; }
 
 h2 {
   font-size: 1.5em; }
 
 .message_center {
   width: 50%;
-  min-height: 100px;
-  border: 1px solid black; }
+  margin: 0 auto;
+  border: 1px solid black;
+  height: 150px; }
+  .message_center h2 {
+    background-color: #6DBE4E;
+    padding: 5px;
+    padding: 5px 9%; }
   .message_center a {
     color: black;
     text-decoration: none;
     cursor: pointer;
-    font-size: 1.25em; }
+    font-size: 1.25em;
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 2px solid #308241;
+    border-radius: 3.5px;
+    background-color: #DBDBDF;
+    color: black;
+    font-size: 1.15em;
+    cursor: pointer;
+    padding: 2px 5px; }
+  .message_center a:nth-of-type(1) {
+    margin: 0 33.88%; }
+  .message_center a:nth-of-type(2) {
+    margin: 0 2.5%; }
 
 .container {
   margin: 0 auto; }
@@ -138,6 +164,8 @@ h2 {
     .container .home_top .header {
       background-color: #6DBE4E;
       padding: 5px; }
+      .container .home_top .header h1 {
+        width: 100%; }
   .container .login {
     -moz-box-sizing: border-box;
     /* Firefox 1, probably can drop this */
@@ -185,5 +213,18 @@ h2 {
       font-weight: bold;
       border: 3px solid #308241;
       padding: 6px; }
+
+.main h1 {
+  margin: 10px auto;
+  width: 38%; }
+.main table {
+  -moz-box-sizing: border-box;
+  /* Firefox 1, probably can drop this */
+  -webkit-box-sizing: border-box;
+  /* Safari 3-4, also probably droppable */
+  box-sizing: border-box;
+  /* Everything else */
+  border: 1px solid black;
+  width: 30%; }
 
 /*# sourceMappingURL=style.css.map */
