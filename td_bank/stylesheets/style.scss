@@ -109,9 +109,11 @@ $label: 1.25em;
 }
 
 nav {
+	height: 0;
 
 	ul {
 		@include segment;
+		opacity: 0;
 
 		li:nth-of-type(1) {
 			border-top: 2px solid $green1;
