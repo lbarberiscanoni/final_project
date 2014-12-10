@@ -247,9 +247,20 @@ h2 {
 	}
 
 	.transfer {
-		width: 70%;
+		@include border-box;
+		width: 80%;
 		border: 1px solid black;
-		margin: 0 auto;
+		padding: 10px;
+		margin: 20px auto;
+
+		input:nth-of-type(3) {
+			margin-left: 38%;
+		}
+
+		.transfer:nth-child(n) {
+			margin-top: 20px;
+			cursor: pointer;
+		}
 	}
 }
 
