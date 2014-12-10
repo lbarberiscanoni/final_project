@@ -3,8 +3,9 @@ $(".menu").click(function(){
 
   if ($("nav").css("height") === "160px") {
     console.log("if works");
-    $("nav").css({height: "0"});
-    $("ul").css({opacity: "0"});
+    $("nav").css({display: "block"});
+    $("nav").css({height: "0", transition: "height 1000ms"});
+    $("ul").css({opacity: "0", transition: "opacity 1000ms"});
     $(".main").css({opacity: "1"});
 
   } else {

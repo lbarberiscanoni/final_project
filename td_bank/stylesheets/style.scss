@@ -14,6 +14,7 @@
 	background-color: $grey6;
 	color: black;
 	font-size: 1.15em;
+	cursor: pointer;
 }
 
 @mixin app_button {
@@ -24,9 +25,15 @@
 }
 
 @mixin segment {
-	background-color: $green5;
-	font-size: $principal;
+	background-color: $green5;		
 	padding: 5px;
+}
+
+@mixin nav_link {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: $label;
 }
 
 $green1: #308241;
@@ -53,9 +60,80 @@ $grey5: #BABAC2;
 
 $grey6: #DBDBDF;
 
-$principal: 1.3em;
+$principal: 1.5em;
 
 $label: 1.25em;
+
+$phi: 1.618033988749894848;	
+
+////// Universal Systems ///////
+
+body {
+	font-size: $principal / $phi;
+}
+.top {
+	width: 70%;
+	margin: 0 auto;
+	min-height: 30px;
+}
+
+.menu, .top img, .logout {
+	float: left;
+}
+
+.menu {
+	@include button;
+}
+
+.top img {
+	min-height: 30px;
+	margin: 0px 17%;
+}
+
+.logout {
+	@include button;
+	padding: 4px 5px;
+}
+
+nav {
+	@include border-box;
+	width: 100%;
+	height: 0;
+
+	ul {
+		@include segment;
+		opacity: 0;
+
+		li {
+			margin: 10px auto;
+			border-bottom: 2px solid $green1;
+			padding-left: 0.5%;
+
+			a {
+				@include nav_link;
+			}
+		}
+
+	}
+}
+
+h1 {
+	font-size: $principal * $phi;
+}
+
+h2 {
+	font-size: $principal;
+}
+
+.message_center {
+	width: 50%;
+	min-height: 100px;
+	border: 1px solid black;
+
+	a {
+		@include nav_link;
+	}
+}
 
 ////// Login ////////
 
@@ -67,7 +145,6 @@ $label: 1.25em;
 		text-align: center;
 
 		.header {
-			border: 1px solid black;
 			@include segment;
 		}
 	}
@@ -95,64 +172,5 @@ $label: 1.25em;
 			@include app_button;
 			padding: 6px;
 		}
-	}
-}
-
-////// Universal Systems ///////
-
-.top {
-	width: 57.6%;
-	margin: 0 auto;
-	height: 30px;
-
-}
-
-.menu, nav, .top img, .logout {
-	float: left;
-}
-
-.top img {
-	min-height: 30px;
-	margin: 0px 10%;
-}
-
-.menu {
-	@include button;
-	cursor: pointer;
-}
-
-nav {
-	@include border-box;
-	width: 100%;
-	height: 0;
-	z-index: 5;
-
-	ul {
-		@include segment;
-		opacity: 0;
-
-		li {
-			margin: 10px auto;
-			border-bottom: 2px solid $green1;
-			padding-left: 0.5%;
-
-			a {
-				color: black;
-				text-decoration: none;
-			}
-		}
-
-	}
-}
-
-.logout {
-	@include button;
-	padding: 4px 5px;
-}
-
-.main {
-
-	h1 {
-		clear: left;
 	}
 }

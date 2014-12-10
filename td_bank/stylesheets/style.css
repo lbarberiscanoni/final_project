@@ -45,15 +45,98 @@ table {
   border-spacing: 0; }
 
 /*Ignore the gross stuff above */
+body {
+  font-size: 0.92705em; }
+
+.top {
+  width: 70%;
+  margin: 0 auto;
+  min-height: 30px; }
+
+.menu, .top img, .logout {
+  float: left; }
+
+.menu {
+  text-decoration: none;
+  -moz-box-sizing: border-box;
+  /* Firefox 1, probably can drop this */
+  -webkit-box-sizing: border-box;
+  /* Safari 3-4, also probably droppable */
+  box-sizing: border-box;
+  /* Everything else */
+  border: 2px solid #308241;
+  border-radius: 3.5px;
+  background-color: #DBDBDF;
+  color: black;
+  font-size: 1.15em;
+  cursor: pointer; }
+
+.top img {
+  min-height: 30px;
+  margin: 0px 17%; }
+
+.logout {
+  text-decoration: none;
+  -moz-box-sizing: border-box;
+  /* Firefox 1, probably can drop this */
+  -webkit-box-sizing: border-box;
+  /* Safari 3-4, also probably droppable */
+  box-sizing: border-box;
+  /* Everything else */
+  border: 2px solid #308241;
+  border-radius: 3.5px;
+  background-color: #DBDBDF;
+  color: black;
+  font-size: 1.15em;
+  cursor: pointer;
+  padding: 4px 5px; }
+
+nav {
+  -moz-box-sizing: border-box;
+  /* Firefox 1, probably can drop this */
+  -webkit-box-sizing: border-box;
+  /* Safari 3-4, also probably droppable */
+  box-sizing: border-box;
+  /* Everything else */
+  width: 100%;
+  height: 0; }
+  nav ul {
+    background-color: #6DBE4E;
+    padding: 5px;
+    opacity: 0; }
+    nav ul li {
+      margin: 10px auto;
+      border-bottom: 2px solid #308241;
+      padding-left: 0.5%; }
+      nav ul li a {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1.25em; }
+
+h1 {
+  font-size: 2.42705em; }
+
+h2 {
+  font-size: 1.5em; }
+
+.message_center {
+  width: 50%;
+  min-height: 100px;
+  border: 1px solid black; }
+  .message_center a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.25em; }
+
 .container {
   margin: 0 auto; }
   .container .home_top {
     margin: 5px auto;
     text-align: center; }
     .container .home_top .header {
-      border: 1px solid black;
       background-color: #6DBE4E;
-      font-size: 1.3em;
       padding: 5px; }
   .container .login {
     -moz-box-sizing: border-box;
@@ -82,6 +165,7 @@ table {
       background-color: #DBDBDF;
       color: black;
       font-size: 1.15em;
+      cursor: pointer;
       padding: 4px 30px; }
     .container .login .check_app {
       text-decoration: none;
@@ -96,77 +180,10 @@ table {
       background-color: #DBDBDF;
       color: black;
       font-size: 1.15em;
+      cursor: pointer;
       background-color: #68B180;
       font-weight: bold;
       border: 3px solid #308241;
       padding: 6px; }
-
-.top {
-  width: 57.6%;
-  margin: 0 auto;
-  height: 30px; }
-
-.menu, nav, .top img, .logout {
-  float: left; }
-
-.top img {
-  min-height: 30px;
-  margin: 0px 10%; }
-
-.menu {
-  text-decoration: none;
-  -moz-box-sizing: border-box;
-  /* Firefox 1, probably can drop this */
-  -webkit-box-sizing: border-box;
-  /* Safari 3-4, also probably droppable */
-  box-sizing: border-box;
-  /* Everything else */
-  border: 2px solid #308241;
-  border-radius: 3.5px;
-  background-color: #DBDBDF;
-  color: black;
-  font-size: 1.15em;
-  cursor: pointer; }
-
-nav {
-  -moz-box-sizing: border-box;
-  /* Firefox 1, probably can drop this */
-  -webkit-box-sizing: border-box;
-  /* Safari 3-4, also probably droppable */
-  box-sizing: border-box;
-  /* Everything else */
-  width: 100%;
-  height: 0;
-  z-index: 5; }
-  nav ul {
-    background-color: #6DBE4E;
-    font-size: 1.3em;
-    padding: 5px;
-    opacity: 0; }
-    nav ul li {
-      margin: 10px auto;
-      border-bottom: 2px solid #308241;
-      padding-left: 0.5%; }
-      nav ul li a {
-        color: black;
-        text-decoration: none; }
-
-.logout {
-  text-decoration: none;
-  -moz-box-sizing: border-box;
-  /* Firefox 1, probably can drop this */
-  -webkit-box-sizing: border-box;
-  /* Safari 3-4, also probably droppable */
-  box-sizing: border-box;
-  /* Everything else */
-  border: 2px solid #308241;
-  border-radius: 3.5px;
-  background-color: #DBDBDF;
-  color: black;
-  font-size: 1.15em;
-  padding: 4px 5px; }
-
-.main h1 {
-  clear: left; }
 
 /*# sourceMappingURL=style.css.map */
