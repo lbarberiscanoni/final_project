@@ -74,7 +74,7 @@ body {
 
 .top {
 	width: 70%;
-	margin: 0 auto;
+	margin: 15px auto 0 auto;
 	min-height: 30px;
 }
 
@@ -147,7 +147,8 @@ h2 {
 	}
 
 	a:nth-of-type(1) {
-		margin: 0 33.88%;
+		margin: 0 2.5%;
+		padding: 2px 63px;
 	}
 
 	a:nth-of-type(2) {
@@ -210,7 +211,20 @@ h2 {
 
 	table {
 		@include border-box;
-		border: 1px solid black;
-		width: 30%;
+		border: 2.5px solid $green6;
+		margin: 10px auto;	
+		width: 70%;
+
+		th, td {
+			border-bottom: 2.5px solid $green6;
+			border-right: 2.5px solid $green6;
+			padding: 5px;
+		}
+
+		td {
+			font-size: $label;
+		}
 	}
+
 }
+

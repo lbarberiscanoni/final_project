@@ -50,7 +50,7 @@ body {
 
 .top {
   width: 70%;
-  margin: 0 auto;
+  margin: 15px auto 0 auto;
   min-height: 30px; }
 
 .menu, .top img, .logout {
@@ -152,7 +152,8 @@ h2 {
     cursor: pointer;
     padding: 2px 5px; }
   .message_center a:nth-of-type(1) {
-    margin: 0 33.88%; }
+    margin: 0 2.5%;
+    padding: 2px 63px; }
   .message_center a:nth-of-type(2) {
     margin: 0 2.5%; }
 
@@ -224,7 +225,14 @@ h2 {
   /* Safari 3-4, also probably droppable */
   box-sizing: border-box;
   /* Everything else */
-  border: 1px solid black;
-  width: 30%; }
+  border: 2.5px solid #68B180;
+  margin: 10px auto;
+  width: 70%; }
+  .main table th, .main table td {
+    border-bottom: 2.5px solid #68B180;
+    border-right: 2.5px solid #68B180;
+    padding: 5px; }
+  .main table td {
+    font-size: 1.25em; }
 
 /*# sourceMappingURL=style.css.map */
