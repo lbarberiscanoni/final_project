@@ -100,7 +100,6 @@ nav {
 	@include border-box;
 	width: 100%;
 	height: 0;
-	display: none;
 	position: fixed;	
 
 	ul {
@@ -116,7 +115,6 @@ nav {
 				@include nav_link;
 			}
 		}
-
 	}
 }
 
@@ -227,4 +225,32 @@ h2 {
 	}
 
 }
+
+////// Transfers ////////
+
+.top {
+	width: 73%;
+}
+
+.main {
+
+	h1 {
+		width: 73%;
+		margin-top: 10px;
+	}
+
+	h2 {
+		width: 65%;
+		margin: 10px auto;
+		text-align: center;
+		line-height: 1.25em;
+	}
+
+	.transfer {
+		width: 70%;
+		border: 1px solid black;
+		margin: 0 auto;
+	}
+}
+
 

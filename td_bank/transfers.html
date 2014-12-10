@@ -1,21 +1,44 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title>TD Bank Online Banking</title>
 	<link href="stylesheets/style.css" type="stylesheets/text/css" rel="stylesheet">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
 </head>
 <body>
 	<div class="container">
 		<section class="top">
 			<button class="menu">Menu</button>
-			<img src="images/logo.png">
+			<img src="images/logo.png" alt="TD Bank logo">
 			<a href="index.html" class="logout">Logout</a>
 		</section>
+		<nav>
+			<ul>
+				<li>
+					<a href="accounts.html">Accounts</a>
+				</li>
+				<li>
+					<a href="tranfers.html">Transfers</a>
+				</li>
+				<li>
+					<a href="bill_pay.html">Paying the Bills</a>
+				</li>
+				<li>
+					<a href="alerts.html">Alerts</a>
+				</li>
+				<li>
+					<a href="p2p_payments.html">Paying People</a>
+				</li>
+				<li>
+					<a href="costumer_service.html">Costumer Service</a>
+				</li>
+			</ul>
+		</nav>
 		<div class="main">
-			<h1>Transfer Between Your TD Bank Accounts</h1>
-			<h2>Make a Transfer</h2>
+			<h1>Make a Transfer</h1>
+			<h2>Transfer Between Your TD Bank Accounts</h2>
 			<div class="transfer">
 				<input>Amount</input>
 				<label>From:</label>	
@@ -38,8 +61,12 @@
 		</div>
 		<div class="message_center">
 			<h2>Message Center</h2>
+			<br>
 			<a href="https://onlinebanking.tdbank.com/default.asp">Inbox</a>
+			<br>
+			<br>
 			<a href="https://onlinebanking.tdbank.com/default.asp">Send a secure message</a></a>
 		</div>
 	</div>
+	<script src="scripts/dropdown_menu.js"></script>
 </body>		
