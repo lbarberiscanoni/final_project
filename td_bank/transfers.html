@@ -9,11 +9,13 @@
 </head>
 <body>
 	<div class="container">
-		<section class="top">
-			<button class="menu">Menu</button>
-			<img src="images/logo.png" alt="TD Bank logo">
-			<a href="index.html" class="logout">Logout</a>
-		</section>
+		<div class="upper_wrapper">
+			<section class="top">
+				<button class="menu">Menu</button>
+				<img src="images/logo.png" alt="TD Bank logo">
+				<a href="index.html" class="logout">Logout</a>
+			</section>
+		</div>
 		<nav>
 			<ul>
 				<li>
@@ -41,7 +43,7 @@
 			<h2>Transfer Between Your TD Bank Accounts</h2>
 			<div class="transfer_form">
 				<label class="transfer">Amount</label>
-				<input class="transfer"></input>
+				<input class="transfer amount"></input>
 				<br>
 				<label class="transfer">From:</label>	
 				<select class="origin_account transfer">
@@ -57,9 +59,14 @@
 				</select>
 				<br>
 				<label class="transfer">Transfer Type</label>
-				<input type="checkbox" class="transfer">Immediate Transfer</input>
-				<br>
-				<input type="checkbox" class="transfer">Schedule Transfers</input>
+				<label class="transfer">
+					<input type="checkbox"</input>
+					Immediate
+				</label>
+				<label class="transfer">
+					<input type="checkbox"></input>
+					Scheduled
+				</label>
 				<br>
 				<button class="confirm" class="transfer">Confirm</button>
 			</div>

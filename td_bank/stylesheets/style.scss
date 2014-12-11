@@ -24,6 +24,13 @@
 	border: 3px solid $green1;
 }
 
+@mixin form_button {
+	@include button;
+	font-size: $option_text;
+	border: 3px solid $grey1;
+	background-color: $green4;
+}
+
 @mixin segment {
 	background-color: $green5;		
 	padding: 5px;
@@ -66,33 +73,39 @@ $label: 1.25em;
 
 $phi: 1.618033988749894848;	
 
+$option_text: 0.89em;
+
 ////// Universal Systems ///////
 
 body {
 	font-size: $principal / $phi;
 }
 
-.top {
-	margin: 15px auto 0 auto;
-	min-height: 30px;
-}
+.upper_wrapper {
+	width: 100%;
 
-.menu, .top img, .logout {
-	float: left;
-}
+	.top {
+		margin: 15px auto 0 auto;
+		min-height: 30px;
+	}
 
-.menu {
-	@include button;
-}
+	.menu, .top img, .logout {
+		float: left;
+	}
 
-.top img {
-	min-height: 30px;
-	margin: 0px 16%;
-}
+	.menu {
+		@include button;
+	}
 
-.logout {
-	@include button;
-	padding: 4px 5px;
+	.top img {
+		min-height: 30px;
+		margin: 0px 16%;
+	}
+
+	.logout {
+		@include button;
+		padding: 4px 5px;
+	}
 }
 
 nav {
@@ -120,10 +133,12 @@ nav {
 h1 {
 	font-size: $principal * $phi;
 	margin: 0 auto;
+	text-align: center;
 }
 
 h2 {
 	font-size: $principal;
+	text-align: center;
 }
 
 .message_center {
@@ -137,6 +152,8 @@ h2 {
 	h2 {
 		@include segment;
 		padding: 5px 9%;
+		text-align: center;
+		margin: 0 auto;
 	}
 
 	a {
@@ -224,7 +241,6 @@ h2 {
 			font-size: $label;
 		}
 	}
-
 }
 
 ////// Transfers ////////
@@ -237,7 +253,8 @@ h2 {
 
 	h1 {
 		width: 75%;
-		margin-top: 10px;
+		margin: 10px auto 0 auto;
+		text-align: center;
 	}
 
 	h2 {
@@ -249,19 +266,46 @@ h2 {
 
 	.transfer_form {
 		@include border-box;
-		width: 83.5%;
-		min-height: 170px;
+		width: 88.5%;
+		min-height: 180px;
 		border: 3.5px solid $green6;	
 		border-radius: 5px;
 		padding: 10px;
 		margin: 20px auto;
+		font-size: $label;	
 
-		input:nth-of-type(3) {
-			margin-left: 35%;
+		.transfer:not(:nth-of-type(1)) {
+			margin: 22px 0;
 		}
 
-		.transfer {
-			margin: 10px 0;
+		label:nth-of-type(5) {
+			border: 1px solid black;
+			margin-right: 30px;
+
+			input {
+				margin-right: 30px;
+			}
+		}
+
+
+		label:nth-of-type(6) {
+			border: 1px solid black;
+			margin-left: 10px;
+		}
+
+		label:nth-of-type(5), label:nth-of-type(6){
+			font-size: $option_text;
+
+			input {
+				width: 15px;
+				height: 15px;
+			}
+
+		}
+
+		button {
+			@include form_button;
+			float: right;
 		}
 	}
 }

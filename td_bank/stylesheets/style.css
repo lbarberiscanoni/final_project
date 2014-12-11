@@ -48,47 +48,45 @@ table {
 body {
   font-size: 0.92705em; }
 
-.top {
-  margin: 15px auto 0 auto;
-  min-height: 30px; }
-
-.menu, .top img, .logout {
-  float: left; }
-
-.menu {
-  text-decoration: none;
-  -moz-box-sizing: border-box;
-  /* Firefox 1, probably can drop this */
-  -webkit-box-sizing: border-box;
-  /* Safari 3-4, also probably droppable */
-  box-sizing: border-box;
-  /* Everything else */
-  border: 2px solid #308241;
-  border-radius: 3.5px;
-  background-color: #DBDBDF;
-  color: black;
-  font-size: 1.15em;
-  cursor: pointer; }
-
-.top img {
-  min-height: 30px;
-  margin: 0px 16%; }
-
-.logout {
-  text-decoration: none;
-  -moz-box-sizing: border-box;
-  /* Firefox 1, probably can drop this */
-  -webkit-box-sizing: border-box;
-  /* Safari 3-4, also probably droppable */
-  box-sizing: border-box;
-  /* Everything else */
-  border: 2px solid #308241;
-  border-radius: 3.5px;
-  background-color: #DBDBDF;
-  color: black;
-  font-size: 1.15em;
-  cursor: pointer;
-  padding: 4px 5px; }
+.upper_wrapper {
+  width: 100%; }
+  .upper_wrapper .top {
+    margin: 15px auto 0 auto;
+    min-height: 30px; }
+  .upper_wrapper .menu, .upper_wrapper .top img, .upper_wrapper .logout {
+    float: left; }
+  .upper_wrapper .menu {
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 2px solid #308241;
+    border-radius: 3.5px;
+    background-color: #DBDBDF;
+    color: black;
+    font-size: 1.15em;
+    cursor: pointer; }
+  .upper_wrapper .top img {
+    min-height: 30px;
+    margin: 0px 16%; }
+  .upper_wrapper .logout {
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 2px solid #308241;
+    border-radius: 3.5px;
+    background-color: #DBDBDF;
+    color: black;
+    font-size: 1.15em;
+    cursor: pointer;
+    padding: 4px 5px; }
 
 nav {
   -moz-box-sizing: border-box;
@@ -116,10 +114,12 @@ nav {
 
 h1 {
   font-size: 2.42705em;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  text-align: center; }
 
 .message_center {
   width: 55.5%;
@@ -130,7 +130,9 @@ h2 {
   .message_center h2 {
     background-color: #6DBE4E;
     padding: 5px;
-    padding: 5px 9%; }
+    padding: 5px 9%;
+    text-align: center;
+    margin: 0 auto; }
   .message_center a {
     color: black;
     text-decoration: none;
@@ -239,7 +241,8 @@ h2 {
 
 .main_transfers h1 {
   width: 75%;
-  margin-top: 10px; }
+  margin: 10px auto 0 auto;
+  text-align: center; }
 .main_transfers h2 {
   width: 75%;
   margin: 10px auto;
@@ -252,15 +255,45 @@ h2 {
   /* Safari 3-4, also probably droppable */
   box-sizing: border-box;
   /* Everything else */
-  width: 83.5%;
-  min-height: 170px;
+  width: 88.5%;
+  min-height: 180px;
   border: 3.5px solid #68B180;
   border-radius: 5px;
   padding: 10px;
-  margin: 20px auto; }
-  .main_transfers .transfer_form input:nth-of-type(3) {
-    margin-left: 35%; }
-  .main_transfers .transfer_form .transfer {
-    margin: 10px 0; }
+  margin: 20px auto;
+  font-size: 1.25em; }
+  .main_transfers .transfer_form .transfer:not(:nth-of-type(1)) {
+    margin: 22px 0; }
+  .main_transfers .transfer_form label:nth-of-type(5) {
+    border: 1px solid black;
+    margin-right: 30px; }
+    .main_transfers .transfer_form label:nth-of-type(5) input {
+      margin-right: 30px; }
+  .main_transfers .transfer_form label:nth-of-type(6) {
+    border: 1px solid black;
+    margin-left: 10px; }
+  .main_transfers .transfer_form label:nth-of-type(5), .main_transfers .transfer_form label:nth-of-type(6) {
+    font-size: 0.89em; }
+    .main_transfers .transfer_form label:nth-of-type(5) input, .main_transfers .transfer_form label:nth-of-type(6) input {
+      width: 15px;
+      height: 15px; }
+  .main_transfers .transfer_form button {
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 2px solid #308241;
+    border-radius: 3.5px;
+    background-color: #DBDBDF;
+    color: black;
+    font-size: 1.15em;
+    cursor: pointer;
+    font-size: 0.89em;
+    border: 3px solid #9797A8;
+    background-color: #88C873;
+    float: right; }
 
 /*# sourceMappingURL=style.css.map */
