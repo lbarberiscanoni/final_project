@@ -73,7 +73,6 @@ body {
 }
 
 .top {
-	width: 70%;
 	margin: 15px auto 0 auto;
 	min-height: 30px;
 }
@@ -88,7 +87,7 @@ body {
 
 .top img {
 	min-height: 30px;
-	margin: 0px 17%;
+	margin: 0px 16%;
 }
 
 .logout {
@@ -100,7 +99,7 @@ nav {
 	@include border-box;
 	width: 100%;
 	height: 0;
-	position: fixed;	
+	display: none;		
 
 	ul {
 		@include segment;
@@ -128,10 +127,12 @@ h2 {
 }
 
 .message_center {
-	width: 50%;
+	width: 55.5%;
 	margin: 0 auto;
-	border: 1px solid black;
-	height: 150px;
+	border: 2px solid black;
+	border-radius: 5px;
+	min-height: 11	0px;
+
 
 	h2 {
 		@include segment;
@@ -145,12 +146,12 @@ h2 {
 	}
 
 	a:nth-of-type(1) {
-		margin: 0 2.5%;
+		margin: 0 2%;
 		padding: 2px 63px;
 	}
 
 	a:nth-of-type(2) {
-		margin: 0 2.5%;
+		margin: 0 2%;
 	}
 }
 
@@ -204,7 +205,7 @@ h2 {
 
 	h1 {
 		margin: 10px auto;
-		width: 38%;
+		width: 42%;
 	}
 
 	table {
@@ -235,12 +236,12 @@ h2 {
 .main_transfers {
 
 	h1 {
-		width: 73%;
+		width: 75%;
 		margin-top: 10px;
 	}
 
 	h2 {
-		width: 65%;
+		width: 75%;
 		margin: 10px auto;
 		text-align: center;
 		line-height: 1.25em;
@@ -248,20 +249,20 @@ h2 {
 
 	.transfer_form {
 		@include border-box;
-		width: 80%;
+		width: 83.5%;
 		min-height: 170px;
-		border: 1px solid black;
+		border: 3.5px solid $green6;	
+		border-radius: 5px;
 		padding: 10px;
 		margin: 20px auto;
 
 		input:nth-of-type(3) {
-			margin-left: 38%;
+			margin-left: 35%;
 		}
-	}
 
-	.transfer {
-		color: blue;
-		cursor: pointer;
+		.transfer {
+			margin: 10px 0;
+		}
 	}
 }
 
