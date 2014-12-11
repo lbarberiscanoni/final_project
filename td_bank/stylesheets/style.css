@@ -126,7 +126,7 @@ h2 {
   margin: 0 auto;
   border: 2px solid black;
   border-radius: 5px;
-  min-height: 11	0px; }
+  min-height: 110px; }
   .message_center h2 {
     background-color: #6DBE4E;
     padding: 5px;
@@ -292,5 +292,8 @@ h2 {
     background-color: #88C873;
     margin-top: 10px;
     float: right; }
+
+.bills {
+  border: 1px solid black; }
 
 /*# sourceMappingURL=style.css.map */
