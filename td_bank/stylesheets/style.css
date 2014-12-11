@@ -214,10 +214,10 @@ h2 {
       border: 3px solid #308241;
       padding: 6px; }
 
-.main h1 {
+.main_accounts h1 {
   margin: 10px auto;
   width: 38%; }
-.main table {
+.main_accounts table {
   -moz-box-sizing: border-box;
   /* Firefox 1, probably can drop this */
   -webkit-box-sizing: border-box;
@@ -227,25 +227,25 @@ h2 {
   border: 2.5px solid #68B180;
   margin: 10px auto;
   width: 70%; }
-  .main table th, .main table td {
+  .main_accounts table th, .main_accounts table td {
     border-bottom: 2.5px solid #68B180;
     border-right: 2.5px solid #68B180;
     padding: 5px; }
-  .main table td {
+  .main_accounts table td {
     font-size: 1.25em; }
 
 .top {
   width: 73%; }
 
-.main h1 {
+.main_transfers h1 {
   width: 73%;
   margin-top: 10px; }
-.main h2 {
+.main_transfers h2 {
   width: 65%;
   margin: 10px auto;
   text-align: center;
   line-height: 1.25em; }
-.main .transfer {
+.main_transfers .transfer_form {
   -moz-box-sizing: border-box;
   /* Firefox 1, probably can drop this */
   -webkit-box-sizing: border-box;
@@ -253,13 +253,14 @@ h2 {
   box-sizing: border-box;
   /* Everything else */
   width: 80%;
+  min-height: 170px;
   border: 1px solid black;
   padding: 10px;
   margin: 20px auto; }
-  .main .transfer input:nth-of-type(3) {
+  .main_transfers .transfer_form input:nth-of-type(3) {
     margin-left: 38%; }
-  .main .transfer .transfer:nth-child(n) {
-    margin-top: 20px;
-    cursor: pointer; }
+.main_transfers .transfer {
+  color: blue;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

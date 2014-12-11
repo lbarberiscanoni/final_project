@@ -200,7 +200,7 @@ h2 {
 
 ////// Accounts ////////
 
-.main {
+.main_accounts {
 
 	h1 {
 		margin: 10px auto;
@@ -232,7 +232,7 @@ h2 {
 	width: 73%;
 }
 
-.main {
+.main_transfers {
 
 	h1 {
 		width: 73%;
@@ -246,9 +246,10 @@ h2 {
 		line-height: 1.25em;
 	}
 
-	.transfer {
+	.transfer_form {
 		@include border-box;
 		width: 80%;
+		min-height: 170px;
 		border: 1px solid black;
 		padding: 10px;
 		margin: 20px auto;
@@ -256,11 +257,11 @@ h2 {
 		input:nth-of-type(3) {
 			margin-left: 38%;
 		}
+	}
 
-		.transfer:nth-child(n) {
-			margin-top: 20px;
-			cursor: pointer;
-		}
+	.transfer {
+		color: blue;
+		cursor: pointer;
 	}
 }
 
