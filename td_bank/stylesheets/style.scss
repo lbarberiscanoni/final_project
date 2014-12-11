@@ -267,7 +267,7 @@ h2 {
 	.transfer_form {
 		@include border-box;
 		width: 88.5%;
-		min-height: 180px;
+		min-height: 190px;
 		border: 3.5px solid $green6;	
 		border-radius: 5px;
 		padding: 10px;
@@ -279,18 +279,12 @@ h2 {
 		}
 
 		label:nth-of-type(5) {
-			border: 1px solid black;
-			margin-right: 30px;
-
-			input {
-				margin-right: 30px;
-			}
+			padding-right: 30px;
 		}
 
 
 		label:nth-of-type(6) {
-			border: 1px solid black;
-			margin-left: 10px;
+			padding-left: 116px;
 		}
 
 		label:nth-of-type(5), label:nth-of-type(6){
@@ -305,6 +299,7 @@ h2 {
 
 		button {
 			@include form_button;
+			margin-top: 10px;
 			float: right;
 		}
 	}

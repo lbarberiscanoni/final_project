@@ -256,7 +256,7 @@ h2 {
   box-sizing: border-box;
   /* Everything else */
   width: 88.5%;
-  min-height: 180px;
+  min-height: 190px;
   border: 3.5px solid #68B180;
   border-radius: 5px;
   padding: 10px;
@@ -265,13 +265,9 @@ h2 {
   .main_transfers .transfer_form .transfer:not(:nth-of-type(1)) {
     margin: 22px 0; }
   .main_transfers .transfer_form label:nth-of-type(5) {
-    border: 1px solid black;
-    margin-right: 30px; }
-    .main_transfers .transfer_form label:nth-of-type(5) input {
-      margin-right: 30px; }
+    padding-right: 30px; }
   .main_transfers .transfer_form label:nth-of-type(6) {
-    border: 1px solid black;
-    margin-left: 10px; }
+    padding-left: 116px; }
   .main_transfers .transfer_form label:nth-of-type(5), .main_transfers .transfer_form label:nth-of-type(6) {
     font-size: 0.89em; }
     .main_transfers .transfer_form label:nth-of-type(5) input, .main_transfers .transfer_form label:nth-of-type(6) input {
@@ -294,6 +290,7 @@ h2 {
     font-size: 0.89em;
     border: 3px solid #9797A8;
     background-color: #88C873;
+    margin-top: 10px;
     float: right; }
 
 /*# sourceMappingURL=style.css.map */
