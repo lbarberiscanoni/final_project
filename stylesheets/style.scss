@@ -1,0 +1,312 @@
+@import "reset";
+
+@mixin border-box {
+   -moz-box-sizing: border-box;   /* Firefox 1, probably can drop this */
+   -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;   /* Everything else */
+}
+
+@mixin button {
+	text-decoration: none;
+	@include border-box;
+	border: 2px solid $green1;
+	border-radius: 3.5px;
+	background-color: $grey6;
+	color: black;
+	font-size: 1.15em;
+	cursor: pointer;
+}
+
+@mixin app_button {
+	@include button;
+	background-color: $green6;
+	font-weight: bold;
+	border: 3px solid $green1;
+}
+
+@mixin form_button {
+	@include button;
+	font-size: $option_text;
+	border: 3px solid $grey1;
+	background-color: $green4;
+}
+
+@mixin segment {
+	background-color: $green5;		
+	padding: 5px;
+}
+
+@mixin nav_link {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: $label;
+}
+
+$green1: #308241;
+
+$green2: #8BCE94;
+
+$green3: #16923B;
+
+$green4: #88C873;
+
+$green5: #6DBE4E;
+
+$green6: #68B180;
+
+$grey1: #9797A8;
+
+$grey2: #D5D5E0;
+
+$grey3: #BABAC2;
+
+$grey4: #DBDBDF;
+
+$grey5: #BABAC2;
+
+$grey6: #DBDBDF;
+
+$principal: 1.5em;
+
+$label: 1.25em;
+
+$phi: 1.618033988749894848;	
+
+$option_text: 0.89em;
+
+////// Universal Systems ///////
+
+body {
+	font-size: $principal / $phi;
+}
+
+.upper_wrapper {
+	width: 100%;
+
+	.top {
+		margin: 15px auto 0 auto;
+		min-height: 30px;
+	}
+
+	.menu, .top img, .logout {
+		float: left;
+	}
+
+	.menu {
+		@include button;
+	}
+
+	.top img {
+		min-height: 30px;
+		margin: 0px 16%;
+	}
+
+	.logout {
+		@include button;
+		padding: 4px 5px;
+	}
+}
+
+nav {
+	@include border-box;
+	width: 100%;
+	height: 0;
+	display: none;		
+
+	ul {
+		@include segment;
+		opacity: 0;
+
+		li {
+			margin: 10px auto;
+			border-bottom: 2px solid $green1;
+			padding-left: 0.5%;
+
+			a {
+				@include nav_link;
+			}
+		}
+	}
+}
+
+h1 {
+	font-size: $principal * $phi;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h2 {
+	font-size: $principal;
+	text-align: center;
+}
+
+.message_center {
+	width: 55.5%;
+	margin: 0 auto;
+	border: 2px solid black;
+	border-radius: 5px;
+	min-height: 110px;
+
+
+	h2 {
+		@include segment;
+		padding: 5px 9%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	a {
+		@include nav_link;
+		@include button;
+		padding: 2px 5px;
+	}
+
+	a:nth-of-type(1) {
+		margin: 0 2%;
+		padding: 2px 63px;
+	}
+
+	a:nth-of-type(2) {
+		margin: 0 2%;
+	}
+}
+
+////// Login ////////
+
+.container {	
+	margin: 0 auto;
+
+	.home_top {
+		margin: 5px auto;	
+		text-align: center;
+
+		.header {
+			@include segment;
+
+			h1 {
+				width: 100%;
+			}
+		}
+	}
+
+	.login {
+		@include border-box;
+		width: 47.5%;
+		margin: 20px auto;
+		text-align: center;	
+
+		input {
+			margin: 10px auto;
+		}	
+
+		label {
+			font-size: $label;
+		}
+
+		.log {
+			@include button;
+			padding: 4px 30px;
+		}
+
+		.check_app {
+			@include app_button;
+			padding: 6px;
+		}
+	}
+}
+
+////// Accounts ////////
+
+.main_accounts {
+
+	h1 {
+		margin: 10px auto;
+		width: 42%;
+	}
+
+	table {
+		@include border-box;
+		border: 2.5px solid $green6;
+		margin: 10px auto;	
+		width: 70%;
+
+		th, td {
+			border-bottom: 2.5px solid $green6;
+			border-right: 2.5px solid $green6;
+			padding: 5px;
+		}
+
+		td {
+			font-size: $label;
+		}
+	}
+}
+
+////// Transfers ////////
+
+.top {
+	width: 73%;
+}
+
+.main_transfers {
+
+	h1 {
+		width: 75%;
+		margin: 10px auto 0 auto;
+		text-align: center;
+	}
+
+	h2 {
+		width: 75%;
+		margin: 10px auto;
+		text-align: center;
+		line-height: 1.25em;
+	}
+
+	.transfer_form {
+		@include border-box;
+		width: 88.5%;
+		min-height: 190px;
+		border: 3.5px solid $green6;	
+		border-radius: 5px;
+		padding: 10px;
+		margin: 20px auto;
+		font-size: $label;	
+
+		.transfer:not(:nth-of-type(1)) {
+			margin: 22px 0;
+		}
+
+		label:nth-of-type(5) {
+			padding-right: 30px;
+		}
+
+
+		label:nth-of-type(6) {
+			padding-left: 116px;
+		}
+
+		label:nth-of-type(5), label:nth-of-type(6){
+			font-size: $option_text;
+
+			input {
+				width: 15px;
+				height: 15px;
+			}
+
+		}
+
+		button {
+			@include form_button;
+			margin-top: 10px;
+			float: right;
+		}
+	}
+}
+
+////// Bill Pay ////////
+
+.bills {
+	border: 1px solid black;
+}

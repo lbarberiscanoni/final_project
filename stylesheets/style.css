@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*Ignore the gross stuff above */
+body {
+  font-size: 0.92705em; }
+
+.upper_wrapper {
+  width: 100%; }
+  .upper_wrapper .top {
+    margin: 15px auto 0 auto;
+    min-height: 30px; }
+  .upper_wrapper .menu, .upper_wrapper .top img, .upper_wrapper .logout {
+    float: left; }
+  .upper_wrapper .menu {
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 2px solid #308241;
+    border-radius: 3.5px;
+    background-color: #DBDBDF;
+    color: black;
+    font-size: 1.15em;
+    cursor: pointer; }
+  .upper_wrapper .top img {
+    min-height: 30px;
+    margin: 0px 16%; }
+  .upper_wrapper .logout {
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 2px solid #308241;
+    border-radius: 3.5px;
+    background-color: #DBDBDF;
+    color: black;
+    font-size: 1.15em;
+    cursor: pointer;
+    padding: 4px 5px; }
+
+nav {
+  -moz-box-sizing: border-box;
+  /* Firefox 1, probably can drop this */
+  -webkit-box-sizing: border-box;
+  /* Safari 3-4, also probably droppable */
+  box-sizing: border-box;
+  /* Everything else */
+  width: 100%;
+  height: 0;
+  display: none; }
+  nav ul {
+    background-color: #6DBE4E;
+    padding: 5px;
+    opacity: 0; }
+    nav ul li {
+      margin: 10px auto;
+      border-bottom: 2px solid #308241;
+      padding-left: 0.5%; }
+      nav ul li a {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1.25em; }
+
+h1 {
+  font-size: 2.42705em;
+  margin: 0 auto;
+  text-align: center; }
+
+h2 {
+  font-size: 1.5em;
+  text-align: center; }
+
+.message_center {
+  width: 55.5%;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  min-height: 110px; }
+  .message_center h2 {
+    background-color: #6DBE4E;
+    padding: 5px;
+    padding: 5px 9%;
+    text-align: center;
+    margin: 0 auto; }
+  .message_center a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.25em;
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 2px solid #308241;
+    border-radius: 3.5px;
+    background-color: #DBDBDF;
+    color: black;
+    font-size: 1.15em;
+    cursor: pointer;
+    padding: 2px 5px; }
+  .message_center a:nth-of-type(1) {
+    margin: 0 2%;
+    padding: 2px 63px; }
+  .message_center a:nth-of-type(2) {
+    margin: 0 2%; }
+
+.container {
+  margin: 0 auto; }
+  .container .home_top {
+    margin: 5px auto;
+    text-align: center; }
+    .container .home_top .header {
+      background-color: #6DBE4E;
+      padding: 5px; }
+      .container .home_top .header h1 {
+        width: 100%; }
+  .container .login {
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    width: 47.5%;
+    margin: 20px auto;
+    text-align: center; }
+    .container .login input {
+      margin: 10px auto; }
+    .container .login label {
+      font-size: 1.25em; }
+    .container .login .log {
+      text-decoration: none;
+      -moz-box-sizing: border-box;
+      /* Firefox 1, probably can drop this */
+      -webkit-box-sizing: border-box;
+      /* Safari 3-4, also probably droppable */
+      box-sizing: border-box;
+      /* Everything else */
+      border: 2px solid #308241;
+      border-radius: 3.5px;
+      background-color: #DBDBDF;
+      color: black;
+      font-size: 1.15em;
+      cursor: pointer;
+      padding: 4px 30px; }
+    .container .login .check_app {
+      text-decoration: none;
+      -moz-box-sizing: border-box;
+      /* Firefox 1, probably can drop this */
+      -webkit-box-sizing: border-box;
+      /* Safari 3-4, also probably droppable */
+      box-sizing: border-box;
+      /* Everything else */
+      border: 2px solid #308241;
+      border-radius: 3.5px;
+      background-color: #DBDBDF;
+      color: black;
+      font-size: 1.15em;
+      cursor: pointer;
+      background-color: #68B180;
+      font-weight: bold;
+      border: 3px solid #308241;
+      padding: 6px; }
+
+.main_accounts h1 {
+  margin: 10px auto;
+  width: 42%; }
+.main_accounts table {
+  -moz-box-sizing: border-box;
+  /* Firefox 1, probably can drop this */
+  -webkit-box-sizing: border-box;
+  /* Safari 3-4, also probably droppable */
+  box-sizing: border-box;
+  /* Everything else */
+  border: 2.5px solid #68B180;
+  margin: 10px auto;
+  width: 70%; }
+  .main_accounts table th, .main_accounts table td {
+    border-bottom: 2.5px solid #68B180;
+    border-right: 2.5px solid #68B180;
+    padding: 5px; }
+  .main_accounts table td {
+    font-size: 1.25em; }
+
+.top {
+  width: 73%; }
+
+.main_transfers h1 {
+  width: 75%;
+  margin: 10px auto 0 auto;
+  text-align: center; }
+.main_transfers h2 {
+  width: 75%;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 1.25em; }
+.main_transfers .transfer_form {
+  -moz-box-sizing: border-box;
+  /* Firefox 1, probably can drop this */
+  -webkit-box-sizing: border-box;
+  /* Safari 3-4, also probably droppable */
+  box-sizing: border-box;
+  /* Everything else */
+  width: 88.5%;
+  min-height: 190px;
+  border: 3.5px solid #68B180;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px auto;
+  font-size: 1.25em; }
+  .main_transfers .transfer_form .transfer:not(:nth-of-type(1)) {
+    margin: 22px 0; }
+  .main_transfers .transfer_form label:nth-of-type(5) {
+    padding-right: 30px; }
+  .main_transfers .transfer_form label:nth-of-type(6) {
+    padding-left: 116px; }
+  .main_transfers .transfer_form label:nth-of-type(5), .main_transfers .transfer_form label:nth-of-type(6) {
+    font-size: 0.89em; }
+    .main_transfers .transfer_form label:nth-of-type(5) input, .main_transfers .transfer_form label:nth-of-type(6) input {
+      width: 15px;
+      height: 15px; }
+  .main_transfers .transfer_form button {
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 2px solid #308241;
+    border-radius: 3.5px;
+    background-color: #DBDBDF;
+    color: black;
+    font-size: 1.15em;
+    cursor: pointer;
+    font-size: 0.89em;
+    border: 3px solid #9797A8;
+    background-color: #88C873;
+    margin-top: 10px;
+    float: right; }
+
+.bills {
+  border: 1px solid black; }
+
+/*# sourceMappingURL=style.css.map */
