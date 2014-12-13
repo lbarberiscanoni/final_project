@@ -110,7 +110,11 @@ nav {
         color: black;
         text-decoration: none;
         cursor: pointer;
-        font-size: 1.25em; }
+        font-size: 1.25em;
+        border: 1px solid black;
+        padding: 5px; }
+      nav ul li a:hover {
+        background-color: blue; }
 
 h1 {
   font-size: 2.42705em;
@@ -123,7 +127,7 @@ h2 {
 
 .message_center {
   width: 55.5%;
-  margin: 0 auto;
+  margin: 15px auto;
   border: 2px solid black;
   border-radius: 5px;
   min-height: 110px; }
@@ -175,7 +179,6 @@ h2 {
     /* Safari 3-4, also probably droppable */
     box-sizing: border-box;
     /* Everything else */
-    width: 47.5%;
     margin: 20px auto;
     text-align: center; }
     .container .login input {
@@ -216,10 +219,10 @@ h2 {
       border: 3px solid #308241;
       padding: 6px; }
 
-.main_accounts h1 {
+.accounts h1 {
   margin: 10px auto;
   width: 42%; }
-.main_accounts table {
+.accounts table {
   -moz-box-sizing: border-box;
   /* Firefox 1, probably can drop this */
   -webkit-box-sizing: border-box;
@@ -229,26 +232,26 @@ h2 {
   border: 2.5px solid #68B180;
   margin: 10px auto;
   width: 70%; }
-  .main_accounts table th, .main_accounts table td {
+  .accounts table th, .accounts table td {
     border-bottom: 2.5px solid #68B180;
     border-right: 2.5px solid #68B180;
     padding: 5px; }
-  .main_accounts table td {
+  .accounts table td {
     font-size: 1.25em; }
 
 .top {
   width: 73%; }
 
-.main_transfers h1 {
+.transfers h1 {
   width: 75%;
   margin: 10px auto 0 auto;
   text-align: center; }
-.main_transfers h2 {
+.transfers h2 {
   width: 75%;
   margin: 10px auto;
   text-align: center;
   line-height: 1.25em; }
-.main_transfers .transfer_form {
+.transfers .transfer_form {
   -moz-box-sizing: border-box;
   /* Firefox 1, probably can drop this */
   -webkit-box-sizing: border-box;
@@ -262,18 +265,18 @@ h2 {
   padding: 10px;
   margin: 20px auto;
   font-size: 1.25em; }
-  .main_transfers .transfer_form .transfer:not(:nth-of-type(1)) {
+  .transfers .transfer_form .transfer:not(:nth-of-type(1)) {
     margin: 22px 0; }
-  .main_transfers .transfer_form label:nth-of-type(5) {
+  .transfers .transfer_form label:nth-of-type(5) {
     padding-right: 30px; }
-  .main_transfers .transfer_form label:nth-of-type(6) {
+  .transfers .transfer_form label:nth-of-type(6) {
     padding-left: 116px; }
-  .main_transfers .transfer_form label:nth-of-type(5), .main_transfers .transfer_form label:nth-of-type(6) {
+  .transfers .transfer_form label:nth-of-type(5), .transfers .transfer_form label:nth-of-type(6) {
     font-size: 0.89em; }
-    .main_transfers .transfer_form label:nth-of-type(5) input, .main_transfers .transfer_form label:nth-of-type(6) input {
+    .transfers .transfer_form label:nth-of-type(5) input, .transfers .transfer_form label:nth-of-type(6) input {
       width: 15px;
       height: 15px; }
-  .main_transfers .transfer_form button {
+  .transfers .transfer_form button {
     text-decoration: none;
     -moz-box-sizing: border-box;
     /* Firefox 1, probably can drop this */
@@ -293,7 +296,94 @@ h2 {
     margin-top: 10px;
     float: right; }
 
+.bill_pay h1 {
+  margin: 15px 0; }
+.bill_pay h2 {
+  margin: 15px 0; }
+
 .bills {
-  border: 1px solid black; }
+  width: 73.5%;
+  margin: 0 auto; }
+
+.account_alerts .alert_info {
+  width: 85%;
+  margin: 10px auto;
+  font-size: 1.68539;
+  line-height: 1.5em; }
+  .account_alerts .alert_info p {
+    margin: 6px 0; }
+  .account_alerts .alert_info span {
+    font-weight: bold;
+    font-size: 1em; }
+.account_alerts .alerts table {
+  -moz-box-sizing: border-box;
+  /* Firefox 1, probably can drop this */
+  -webkit-box-sizing: border-box;
+  /* Safari 3-4, also probably droppable */
+  box-sizing: border-box;
+  /* Everything else */
+  border: 2.5px solid #68B180;
+  margin: 10px auto;
+  width: 70%; }
+  .account_alerts .alerts table th, .account_alerts .alerts table td {
+    border-bottom: 2.5px solid #68B180;
+    border-right: 2.5px solid #68B180;
+    padding: 5px; }
+  .account_alerts .alerts table td {
+    font-size: 1.25em; }
+
+.p2p_payments {
+  width: 90%;
+  margin: 0 auto; }
+  .p2p_payments h1 {
+    margin: 15px 0; }
+  .p2p_payments li {
+    font-size: 1.68539;
+    line-height: 1.5em;
+    margin: 8px 0; }
+  .p2p_payments p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin: 8px 0; }
+  .p2p_payments ul {
+    margin-left: 5%; }
+  .p2p_payments ul:nth-of-type(2) li {
+    margin-left: 10%; }
+  .p2p_payments .choice {
+    text-align: center;
+    margin: 20px auto; }
+    .p2p_payments .choice button {
+      text-decoration: none;
+      -moz-box-sizing: border-box;
+      /* Firefox 1, probably can drop this */
+      -webkit-box-sizing: border-box;
+      /* Safari 3-4, also probably droppable */
+      box-sizing: border-box;
+      /* Everything else */
+      border: 2px solid #308241;
+      border-radius: 3.5px;
+      background-color: #DBDBDF;
+      color: black;
+      font-size: 1.15em;
+      cursor: pointer; }
+    .p2p_payments .choice a {
+      margin: 30px 0;
+      font-size: 1.25em; }
+
+.custumer_service {
+  width: 85%;
+  margin: 0 auto; }
+  .custumer_service h1, .custumer_service h2 {
+    margin: 15px 0; }
+  .custumer_service ul {
+    border: 2px solid #8BCE94;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto; }
+    .custumer_service ul li {
+      font-size: 1.68539;
+      line-height: 1.5em; }
+  .custumer_service .messages ul {
+    width: 55%; }
 
 /*# sourceMappingURL=style.css.map */
