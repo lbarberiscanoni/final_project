@@ -86,31 +86,29 @@ body {
 	font-size: $principal / $phi;
 }
 
-.upper_wrapper {
-	width: 100%;
+.top {
+	margin: 15px auto 0 auto;
+	border: 1px solid black;
+	max-width: 234px;
+	min-height: 29px;
+}
 
-	.top {
-		margin: 15px auto 0 auto;
-		min-height: 30px;
-	}
+.menu, .top img, .logout {
+	float: left;
+}
 
-	.menu, .top img, .logout {
-		float: left;
-	}
+.menu {
+	@include button;
+}
 
-	.menu {
-		@include button;
-	}
+.top img {
+	min-height: 30px;
+	margin: 0px 16%;
+}
 
-	.top img {
-		min-height: 30px;
-		margin: 0px 16%;
-	}
-
-	.logout {
-		@include button;
-		padding: 4px 5px;
-	}
+.logout {
+	@include button;
+	padding: 4px 5px;
 }
 
 nav {
@@ -124,7 +122,7 @@ nav {
 		opacity: 0;
 
 		li {
-			margin: 10px auto;
+			margin: 20px auto;
 			border-bottom: 2px solid $green1;
 			padding-left: 0.5%;
 
@@ -132,6 +130,7 @@ nav {
 				@include nav_link;
 				border: 1px solid black;
 				padding: 5px;
+				margin-bottom: 10px;
 			}
 
 			a:hover {
@@ -170,16 +169,16 @@ h2 {
 	a {
 		@include nav_link;
 		@include button;
-		padding: 2px 5px;
 	}
 
 	a:nth-of-type(1) {
 		margin: 0 2%;
-		padding: 2px 63px;
+		padding: 2px 36.035%;
 	}
 
 	a:nth-of-type(2) {
 		margin: 0 2%;
+		padding: 2px 3%;
 	}
 }
 
@@ -239,7 +238,6 @@ h2 {
 		@include border-box;
 		border: 2.5px solid $green6;
 		margin: 10px auto;	
-		width: 70%;
 
 		th, td {
 			border-bottom: 2.5px solid $green6;
@@ -250,6 +248,19 @@ h2 {
 		td {
 			font-size: $label;
 		}
+
+		.blank_account {
+			width: 242%;
+			display: none;
+
+			th, td {
+				width: 500px;
+			}
+		}	
+	}
+
+	.accounts_display {
+		width: 83%;
 	}
 }
 
@@ -448,6 +459,42 @@ h2 {
 	}
 }
 
+@media screen and (min-width: 520px) {
+
+	.main {
+		border: 1px solid black;
+		width: 80%;
+		margin: 15px auto;
+	}
+
+	.message_center {
+		border: 1px solid black;
+		text-align: center;
+
+		a:nth-of-type(1) {
+			padding: 3px 40%;
+		}
+
+		a:nth-of-type(2) {
+			padding: 3px 20%;
+		}
+	}
+
+	.accounts {
+
+		table {
+			width: 90%;
+			min-height: 150px;
+
+			.blank_account {
+				display: block;
+				transition: display 1000ms;
+			}
+
+		}
+	}
+
+}
 
 
 
