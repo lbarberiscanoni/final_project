@@ -129,6 +129,7 @@ h2 {
   text-align: center; }
 
 .message_center {
+  clear: both;
   width: 55.5%;
   margin: 15px auto;
   border: 2px solid black;
@@ -313,6 +314,11 @@ h2 {
 .bills {
   width: 73.5%;
   margin: 0 auto; }
+  .bills .bills_regular {
+    float: left;
+    margin-bottom: 20px; }
+  .bills .bills_expanded {
+    float: right; }
 
 .account_alerts .alert_info {
   width: 85%;
@@ -431,6 +437,8 @@ h2 {
     height: 100%;
     display: block; }
     nav ul {
+      width: 100%;
+      margin: 10px 0;
       opacity: 1; }
       nav ul li {
         background-color: #D5D5E0;
