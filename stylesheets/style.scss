@@ -90,10 +90,17 @@ $phi: 1.618033988749894848;
 
 $option_text: 0.89em;
 
+$font_a: "ff-basic-gothic-web-pro",sans-serif;
+
+$font_b: "jaf-bernina-sans",sans-serif;
+
+$font_c: "jaf-bernina-sans-comp",sans-serif;
+
 ////// Universal Systems ///////
 
 body {
 	font-size: $principal / $phi;
+	font-style: $font_a;
 }
 
 .top {
@@ -480,7 +487,6 @@ h2 {
 	}
 
 	.top {
-		border: 1px solid black;
 		margin: 5px auto 5px auto;
 		width: 90%;
 
@@ -550,12 +556,3 @@ h2 {
 		width: 83%;
 	}
 }
-
-
-
-
-
-
-
-
-

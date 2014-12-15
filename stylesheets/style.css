@@ -46,7 +46,8 @@ table {
 
 /*Ignore the gross stuff above */
 body {
-  font-size: 0.92705em; }
+  font-size: 0.92705em;
+  font-style: "ff-basic-gothic-web-pro", sans-serif; }
 
 .top {
   margin: 15px auto 0 auto;
@@ -403,7 +404,6 @@ h2 {
     display: none; }
 
   .top {
-    border: 1px solid black;
     margin: 5px auto 5px auto;
     width: 90%; }
     .top img {
