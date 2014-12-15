@@ -143,7 +143,7 @@ h2 {
   width: 75%;
   max-width: 250px;
   margin: 15px auto;
-  border: 2px solid black;
+  border: 5px solid #308241;
   border-radius: 5px;
   min-height: 110px; }
   .message_center h2 {
@@ -430,6 +430,9 @@ h2 {
       margin: 0 auto;
       padding: 2%; } }
 @media screen and (min-width: 520px) {
+  body {
+    font-size: 92%; }
+
   .main {
     width: 80%;
     margin: 15px auto; }
@@ -476,6 +479,17 @@ h2 {
           font-size: 1.0625em; }
       nav ul .page_displayed {
         display: none; }
+
+  .accounts {
+    width: 90%; }
+    .accounts table tr th {
+      font-size: 120%;
+      padding: 10px;
+      border: 3.5px solid #68B180; }
+    .accounts table tr td {
+      font-size: 150%;
+      padding: 10px;
+      border: 3.5px solid #68B180; }
 
   .transfers .transfer_form {
     width: 80%; }

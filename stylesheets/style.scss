@@ -180,7 +180,7 @@ h2 {
 	width: 75%;
 	max-width: 250px;
 	margin: 15px auto;
-	border: 2px solid black;
+	border: 5px solid $green1;
 	border-radius: 5px;
 	min-height: 110px;
 
@@ -524,6 +524,10 @@ h2 {
 
 //// Universal /////
 
+	body {
+		font-size: 92%;
+	}
+
 	.main {
 		width: 80%;
 		margin: 15px auto;
@@ -578,6 +582,31 @@ h2 {
 			}
 		}
 	}
+
+//// Accounts ////
+
+	.accounts {
+		width: 90%;
+
+		table {
+
+			tr {
+
+				th {
+					font-size: 120%;
+					padding: 10px;
+					border: 3.5px solid $green6;
+				}
+
+				td {
+					font-size: 150%;
+					padding: 10px;
+					border: 3.5px solid $green6;
+				}
+			}
+		}
+	}
+
 
 //// Tranfers ////
 
