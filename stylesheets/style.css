@@ -47,11 +47,12 @@ table {
 /*Ignore the gross stuff above */
 body {
   font-size: 0.92705em;
-  font-style: "ff-basic-gothic-web-pro", sans-serif; }
+  font-family: "ff-basic-gothic-web-pro", sans-serif; }
 
 .top {
   margin: 15px auto 0 auto;
-  min-height: 29px; }
+  min-height: 29px;
+  border: 1px solid black; }
 
 .menu, .top img, .logout {
   float: left; }
@@ -73,7 +74,7 @@ body {
 
 .top img {
   min-height: 30px;
-  margin: 0px 16%; }
+  margin: 0px 14.3%; }
 
 .logout {
   text-decoration: none;
@@ -121,11 +122,13 @@ nav {
 
 h1 {
   font-size: 2.42705em;
+  font-family: "jaf-bernina-sans", sans-serif;
   margin: 0 auto;
   text-align: center; }
 
 h2 {
   font-size: 1.5em;
+  font-family: "jaf-bernina-sans", sans-serif;
   text-align: center; }
 
 .message_center {
@@ -163,8 +166,7 @@ h2 {
     margin: 0 2%;
     padding: 2px 36.035%; }
   .message_center a:nth-of-type(2) {
-    margin: 0 2%;
-    padding: 2px 3%; }
+    padding: 2px 0; }
 
 .container {
   margin: 0 auto; }
@@ -240,7 +242,8 @@ h2 {
     border-right: 2.5px solid #68B180;
     padding: 5px; }
   .accounts table td {
-    font-size: 1.25em; }
+    font-size: 1.25em;
+    font-family: "jaf-bernina-sans-comp", sans-serif; }
   .accounts table .blank_account {
     width: 242%;
     display: none; }
