@@ -158,7 +158,6 @@ nav {
 
 .main {
 	width: 90%;
-	min-height: 500px;
 	height: 100%;
 	margin: 0 auto;	
 }
@@ -347,11 +346,6 @@ h2 {
 
 ////// Bill Pay ////////
 
-.main .billpay {
-	min-height: 50px;
-	border: 1px solid black;
-}
-
 .bill_pay {
 
 	h1 {
@@ -364,12 +358,14 @@ h2 {
 }
 
 .bills {	
-	width: 73.5%;
-	margin: 0 auto;
+	width: 90%;
+	max-width: 280px;
+	margin: 30px auto;	
+	margin-bottom: 20px;
+	border: 1px solid transparent;
 
 	.bills_regular {
 		float: left;
-		margin-bottom: 20px;
 	}
 	
 	.bills_expanded {	
@@ -481,6 +477,10 @@ h2 {
 
 		li {
 			@include explain_p;
+
+			a {	
+				color: #00B2EE;
+			}
 		}
 	}
 
@@ -562,8 +562,38 @@ h2 {
 		}
 	}
 
-//// Accounts ////
+//// Tranfers ////
 
-	.accounts {
+	.transfers {
+
+		.transfer_form {
+			width: 80%;
+			label:nth-of-type(5) {
+				padding-right: 0;
+			}
+
+			label:nth-of-type(6) {
+				padding-left: 0;	
+			}
+
+		}
+	}
+
+//// p2p payments ////
+
+	.p2p_payments {
+
+		h2:nth-of-type(1) {
+			line-height: 1.3em;
+			width: 90%;
+			margin: 0 auto;
+			text-align: left;
+		}
+
+		h2:nth-of-type(2) {
+			margin: 10px auto 20px auto;
+			text-align: center;
+		}
 	}
 }
+	

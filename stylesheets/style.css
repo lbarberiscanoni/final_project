@@ -124,7 +124,6 @@ nav {
 
 .main {
   width: 90%;
-  min-height: 500px;
   height: 100%;
   margin: 0 auto; }
 
@@ -312,21 +311,19 @@ h2 {
     margin-top: 10px;
     float: right; }
 
-.main .billpay {
-  min-height: 50px;
-  border: 1px solid black; }
-
 .bill_pay h1 {
   margin: 15px 0; }
 .bill_pay h2 {
   margin: 15px 0; }
 
 .bills {
-  width: 73.5%;
-  margin: 0 auto; }
+  width: 90%;
+  max-width: 280px;
+  margin: 30px auto;
+  margin-bottom: 20px;
+  border: 1px solid transparent; }
   .bills .bills_regular {
-    float: left;
-    margin-bottom: 20px; }
+    float: left; }
   .bills .bills_expanded {
     float: right; }
 
@@ -408,6 +405,8 @@ h2 {
     .custumer_service ul li {
       font-size: 1.68539;
       line-height: 1.5em; }
+      .custumer_service ul li a {
+        color: #00B2EE; }
   .custumer_service .messages ul {
     width: 55%; }
 
@@ -464,6 +463,22 @@ h2 {
         nav ul li a {
           font-size: 1.0625em; }
       nav ul .page_displayed {
-        display: none; } }
+        display: none; }
+
+  .transfers .transfer_form {
+    width: 80%; }
+    .transfers .transfer_form label:nth-of-type(5) {
+      padding-right: 0; }
+    .transfers .transfer_form label:nth-of-type(6) {
+      padding-left: 0; }
+
+  .p2p_payments h2:nth-of-type(1) {
+    line-height: 1.3em;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left; }
+  .p2p_payments h2:nth-of-type(2) {
+    margin: 10px auto 20px auto;
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
