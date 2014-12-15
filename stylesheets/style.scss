@@ -159,6 +159,7 @@ h2 {
 }
 
 .message_center {
+	clear: both;
 	width: 55.5%;
 	margin: 15px auto;
 	border: 2px solid black;
@@ -349,6 +350,15 @@ h2 {
 .bills {	
 	width: 73.5%;
 	margin: 0 auto;
+
+	.bills_regular {
+		float: left;
+		margin-bottom: 20px;
+	}
+	
+	.bills_expanded {	
+		float: right;
+	}
 }
 
 ////// Alerts ////////
@@ -480,7 +490,6 @@ h2 {
 	}
 
 	.top {
-		border: 1px solid black;
 		margin: 5px auto 5px auto;
 		width: 90%;
 
@@ -513,6 +522,7 @@ h2 {
 		display: block;
 
 		ul {
+			width: 100%;
 			margin: 10px 0;
 			opacity: 1;
 
