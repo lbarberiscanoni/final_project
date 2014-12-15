@@ -100,7 +100,9 @@ $font_c: "jaf-bernina-sans-comp",sans-serif;
 body {
 	font-size: $principal / $phi;
 	font-family: $font_a;
-	color: black;
+	color: white;
+	background-color: $green3;
+	overflow: hidden;
 }
 
 .top {
@@ -156,13 +158,15 @@ nav {
 
 .main {
 	width: 90%;
-	margin: 0 auto;
+	min-height: 500px;
+	height: 100%;
+	margin: 0 auto;	
 }
 
 h1 {
 	font-size: $principal * $phi;
 	font-family: $font_b;
-	margin: 0 auto;
+	margin: 20px auto;
 	text-align: center;
 }
 
@@ -174,7 +178,7 @@ h2 {
 
 .message_center {
 	clear: both;
-	width: 55.5%;
+	width: 75%;
 	margin: 15px auto;
 	border: 2px solid black;
 	border-radius: 5px;
@@ -199,8 +203,8 @@ h2 {
 	}
 
 	a:nth-of-type(2) {
-		// margin: 0 2%;
-		padding: 2px 0;
+		margin: 0 2%;
+		padding: 2px 3%;
 	}
 }
 
@@ -259,7 +263,6 @@ h2 {
 	table {
 		@include border-box;
 		margin: 10px auto;
-		display: block;
 
 		tr:nth-of-type(3) {
 			display: none;
@@ -290,31 +293,30 @@ h2 {
 .transfers {
 
 	h1 {
-		width: 75%;
-		margin: 10px auto 0 auto;
-		text-align: center;
+		width: 92%;
+		margin: 20px auto 0 auto;
 	}
 
 	h2 {
-		width: 75%;
-		margin: 10px auto;
+		width: 90%;
+		margin: 20px auto;
 		text-align: center;
-		line-height: 1.25em;
+		line-height: 1.3em;
 	}
 
 	.transfer_form {
 		@include border-box;
-		width: 88.5%;
+		width: 100%;
 		min-height: 190px;
 		border: 3.5px solid $green6;	
 		border-radius: 5px;
 		padding: 10px;
 		margin: 20px auto;
-		font-size: $label;	
+		font-size: $label * 0.9;	
 
-		.transfer:not(:nth-of-type(1)) {
-			margin: 22px 0;
-		}
+			.transfer:not(:nth-of-type(1)) {
+				margin: 22px 0;
+			}
 
 		label:nth-of-type(5) {
 			padding-right: 30px;
@@ -344,6 +346,11 @@ h2 {
 }
 
 ////// Bill Pay ////////
+
+.main .billpay {
+	min-height: 50px;
+	border: 1px solid black;
+}
 
 .bill_pay {
 
@@ -517,11 +524,11 @@ h2 {
 		max-width: 300px;
 
 		a:nth-of-type(1) {
-			padding: 3px 40%;
+			padding: 3px 38%;
 		}
 
 		a:nth-of-type(2) {
-			padding: 3px 15%;
+			padding: 3px 7%;
 			margin: 0 2%;
 		}
 	}

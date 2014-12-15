@@ -48,7 +48,9 @@ table {
 body {
   font-size: 0.92705em;
   font-family: "ff-basic-gothic-web-pro", sans-serif;
-  color: black; }
+  color: white;
+  background-color: #16923B;
+  overflow: hidden; }
 
 .top {
   margin: 15px auto 0 auto;
@@ -122,12 +124,14 @@ nav {
 
 .main {
   width: 90%;
+  min-height: 500px;
+  height: 100%;
   margin: 0 auto; }
 
 h1 {
   font-size: 2.42705em;
   font-family: "jaf-bernina-sans", sans-serif;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center; }
 
 h2 {
@@ -137,7 +141,7 @@ h2 {
 
 .message_center {
   clear: both;
-  width: 55.5%;
+  width: 75%;
   margin: 15px auto;
   border: 2px solid black;
   border-radius: 5px;
@@ -170,7 +174,8 @@ h2 {
     margin: 0 2%;
     padding: 2px 36.035%; }
   .message_center a:nth-of-type(2) {
-    padding: 2px 0; }
+    margin: 0 2%;
+    padding: 2px 3%; }
 
 .container {
   margin: 0 auto; }
@@ -239,8 +244,7 @@ h2 {
   /* Safari 3-4, also probably droppable */
   box-sizing: border-box;
   /* Everything else */
-  margin: 10px auto;
-  display: block; }
+  margin: 10px auto; }
   .accounts table tr:nth-of-type(3) {
     display: none; }
   .accounts table th, .accounts table td {
@@ -256,14 +260,13 @@ h2 {
   width: 73%; }
 
 .transfers h1 {
-  width: 75%;
-  margin: 10px auto 0 auto;
-  text-align: center; }
+  width: 92%;
+  margin: 20px auto 0 auto; }
 .transfers h2 {
-  width: 75%;
-  margin: 10px auto;
+  width: 90%;
+  margin: 20px auto;
   text-align: center;
-  line-height: 1.25em; }
+  line-height: 1.3em; }
 .transfers .transfer_form {
   -moz-box-sizing: border-box;
   /* Firefox 1, probably can drop this */
@@ -271,13 +274,13 @@ h2 {
   /* Safari 3-4, also probably droppable */
   box-sizing: border-box;
   /* Everything else */
-  width: 88.5%;
+  width: 100%;
   min-height: 190px;
   border: 3.5px solid #68B180;
   border-radius: 5px;
   padding: 10px;
   margin: 20px auto;
-  font-size: 1.25em; }
+  font-size: 1.125em; }
   .transfers .transfer_form .transfer:not(:nth-of-type(1)) {
     margin: 22px 0; }
   .transfers .transfer_form label:nth-of-type(5) {
@@ -308,6 +311,10 @@ h2 {
     background-color: #88C873;
     margin-top: 10px;
     float: right; }
+
+.main .billpay {
+  min-height: 50px;
+  border: 1px solid black; }
 
 .bill_pay h1 {
   margin: 15px 0; }
@@ -426,9 +433,9 @@ h2 {
     text-align: center;
     max-width: 300px; }
     .message_center a:nth-of-type(1) {
-      padding: 3px 40%; }
+      padding: 3px 38%; }
     .message_center a:nth-of-type(2) {
-      padding: 3px 15%;
+      padding: 3px 7%;
       margin: 0 2%; }
 
   nav {
