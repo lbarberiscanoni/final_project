@@ -141,7 +141,7 @@ nav {
 		li {
 			margin: 20px auto;
 			border-bottom: 2px solid $green1;
-			padding-left: 0.5%;
+			position: relative;
 
 			a {
 				@include nav_link;
@@ -178,6 +178,7 @@ h2 {
 .message_center {
 	clear: both;
 	width: 75%;
+	max-width: 250px;
 	margin: 15px auto;
 	border: 2px solid black;
 	border-radius: 5px;
@@ -197,13 +198,17 @@ h2 {
 	}
 
 	a:nth-of-type(1) {
-		margin: 0 2%;
+		margin: 15px 2%;
 		padding: 2px 36.035%;
+		display: block;
+		text-align: center;
 	}
 
 	a:nth-of-type(2) {
-		margin: 0 2%;
+		margin: 0 2% 15px 2%;
 		padding: 2px 3%;
+		display: block;
+		text-align: center;
 	}
 }
 
@@ -521,32 +526,21 @@ h2 {
 
 	.message_center {
 		text-align: center;
-		max-width: 300px;
-
-		a:nth-of-type(1) {
-			padding: 3px 38%;
-		}
-
-		a:nth-of-type(2) {
-			padding: 3px 7%;
-			margin: 0 2%;
-		}
 	}
 
 	nav {
 		@include border-box;
 		width: 100%;
-		display: block;
+		height: 100%;
+		display: inline-block;
 
 		ul {
-			width: 100%;
-			margin: 10px 0 0 0;
+			margin: 10px auto 0 auto;
 			opacity: 1;
 			padding: 0;
 			padding-bottom: 20px;
 
 			li {
-				display: block;
 				@include flapping_section;
 				float: left;
 
