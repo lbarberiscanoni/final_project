@@ -431,6 +431,7 @@ h2 {
     height: 100%;
     display: block; }
     nav ul {
+      margin: 10px 0;
       opacity: 1; }
       nav ul li {
         background-color: #D5D5E0;
