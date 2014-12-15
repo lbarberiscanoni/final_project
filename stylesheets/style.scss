@@ -48,6 +48,16 @@
 	line-height: $principal;
 }
 
+@mixin flapping_section {
+	background-color: $grey2;
+	border-top: 2px solid $green2;
+	border-bottom: none;
+	border-left: 2px solid $green2;
+	border-right: 2px solid $green2;
+	border-radius: 5px;
+	min-height: 20px;
+}
+
 $green1: #308241;
 
 $green2: #8BCE94;
@@ -88,7 +98,6 @@ body {
 
 .top {
 	margin: 15px auto 0 auto;
-	border: 1px solid black;
 	max-width: 234px;
 	min-height: 29px;
 }
@@ -128,13 +137,12 @@ nav {
 
 			a {
 				@include nav_link;
-				border: 1px solid black;
 				padding: 5px;
 				margin-bottom: 10px;
 			}
 
 			a:hover {
-				background-color: blue;
+				z-index: 3;
 			}
 		}
 	}
@@ -461,15 +469,16 @@ h2 {
 
 @media screen and (min-width: 520px) {
 
+//// Universal /////
+
 	.main {
-		border: 1px solid black;
 		width: 80%;
 		margin: 15px auto;
 	}
 
 	.message_center {
-		border: 1px solid black;
 		text-align: center;
+		max-width: 300px;
 
 		a:nth-of-type(1) {
 			padding: 3px 40%;
@@ -479,6 +488,34 @@ h2 {
 			padding: 3px 20%;
 		}
 	}
+
+	nav {
+		@include border-box;
+		width: 100%;
+		height: 100%;
+		display: block;		
+
+		ul {
+			@include segment;
+			opacity: 1;
+
+			li {
+				@include flapping_section;
+				float: left;
+
+				a {
+					font-size: $label * 0.959;
+				}
+
+			}
+
+			.page_displayed {
+				display: none;
+			}
+		}
+	}
+
+//// Accounts ////
 
 	.accounts {
 
@@ -490,10 +527,12 @@ h2 {
 				display: block;
 				transition: display 1000ms;
 			}
-
 		}
 	}
 
+	.accounts_display {
+		width: 83%;
+	}
 }
 
 

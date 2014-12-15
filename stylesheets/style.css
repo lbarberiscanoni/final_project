@@ -50,7 +50,6 @@ body {
 
 .top {
   margin: 15px auto 0 auto;
-  border: 1px solid black;
   max-width: 234px;
   min-height: 29px; }
 
@@ -115,11 +114,10 @@ nav {
         text-decoration: none;
         cursor: pointer;
         font-size: 1.25em;
-        border: 1px solid black;
         padding: 5px;
         margin-bottom: 10px; }
       nav ul li a:hover {
-        background-color: blue; }
+        z-index: 3; }
 
 h1 {
   font-size: 2.42705em;
@@ -399,23 +397,53 @@ h2 {
 
 @media screen and (min-width: 520px) {
   .main {
-    border: 1px solid black;
     width: 80%;
     margin: 15px auto; }
 
   .message_center {
-    border: 1px solid black;
-    text-align: center; }
+    text-align: center;
+    max-width: 300px; }
     .message_center a:nth-of-type(1) {
       padding: 3px 40%; }
     .message_center a:nth-of-type(2) {
       padding: 3px 20%; }
+
+  nav {
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    width: 100%;
+    height: 100%;
+    display: block; }
+    nav ul {
+      background-color: #6DBE4E;
+      padding: 5px;
+      opacity: 1; }
+      nav ul li {
+        background-color: #D5D5E0;
+        border-top: 2px solid #8BCE94;
+        border-bottom: none;
+        border-left: 2px solid #8BCE94;
+        border-right: 2px solid #8BCE94;
+        border-radius: 5px;
+        min-height: 20px;
+        float: left; }
+        nav ul li a {
+          font-size: 1.19875em; }
+      nav ul .page_displayed {
+        display: none; }
 
   .accounts table {
     width: 90%;
     min-height: 150px; }
     .accounts table .blank_account {
       display: block;
-      transition: display 1000ms; } }
+      transition: display 1000ms; }
+
+  .accounts_display {
+    width: 83%; } }
 
 /*# sourceMappingURL=style.css.map */
