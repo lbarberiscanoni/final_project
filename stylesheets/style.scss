@@ -55,7 +55,7 @@
 	border-left: 2px solid $green2;
 	border-right: 2px solid $green2;
 	border-radius: 5px;
-	min-height: 20px;
+	min-height: 21px;
 }
 
 $green1: #308241;
@@ -98,7 +98,6 @@ body {
 
 .top {
 	margin: 15px auto 0 auto;
-	max-width: 234px;
 	min-height: 29px;
 }
 
@@ -476,6 +475,24 @@ h2 {
 		margin: 15px auto;
 	}
 
+	.menu {
+		display: none;
+	}
+
+	.top {
+		border: 1px solid black;
+		margin: 5px auto 5px auto;
+		width: 90%;
+
+		img {
+			margin: 0 20% 0 45%;
+		}
+	}
+
+	.logout {
+		float: right;
+	}
+
 	.message_center {
 		text-align: center;
 		max-width: 300px;
@@ -493,10 +510,9 @@ h2 {
 		@include border-box;
 		width: 100%;
 		height: 100%;
-		display: block;		
+		display: block;
 
 		ul {
-			@include segment;
 			opacity: 1;
 
 			li {
