@@ -47,12 +47,12 @@ table {
 /*Ignore the gross stuff above */
 body {
   font-size: 0.92705em;
-  font-family: "ff-basic-gothic-web-pro", sans-serif; }
+  font-family: "ff-basic-gothic-web-pro", sans-serif;
+  color: black; }
 
 .top {
   margin: 15px auto 0 auto;
-  min-height: 29px;
-  border: 1px solid black; }
+  min-height: 29px; }
 
 .menu, .top img, .logout {
   float: left; }
@@ -67,8 +67,8 @@ body {
   /* Everything else */
   border: 2px solid #308241;
   border-radius: 3.5px;
-  background-color: #DBDBDF;
-  color: black;
+  background-color: #8BCE94;
+  color: white;
   font-size: 1.15em;
   cursor: pointer; }
 
@@ -86,8 +86,8 @@ body {
   /* Everything else */
   border: 2px solid #308241;
   border-radius: 3.5px;
-  background-color: #DBDBDF;
-  color: black;
+  background-color: #8BCE94;
+  color: white;
   font-size: 1.15em;
   cursor: pointer;
   padding: 4px 5px; }
@@ -111,7 +111,7 @@ nav {
       border-bottom: 2px solid #308241;
       padding-left: 0.5%; }
       nav ul li a {
-        color: black;
+        color: white;
         text-decoration: none;
         cursor: pointer;
         font-size: 1.25em;
@@ -119,6 +119,10 @@ nav {
         margin-bottom: 10px; }
       nav ul li a:hover {
         z-index: 3; }
+
+.main {
+  width: 90%;
+  margin: 0 auto; }
 
 h1 {
   font-size: 2.42705em;
@@ -145,7 +149,7 @@ h2 {
     text-align: center;
     margin: 0 auto; }
   .message_center a {
-    color: black;
+    color: white;
     text-decoration: none;
     cursor: pointer;
     font-size: 1.25em;
@@ -158,8 +162,8 @@ h2 {
     /* Everything else */
     border: 2px solid #308241;
     border-radius: 3.5px;
-    background-color: #DBDBDF;
-    color: black;
+    background-color: #8BCE94;
+    color: white;
     font-size: 1.15em;
     cursor: pointer; }
   .message_center a:nth-of-type(1) {
@@ -201,8 +205,8 @@ h2 {
       /* Everything else */
       border: 2px solid #308241;
       border-radius: 3.5px;
-      background-color: #DBDBDF;
-      color: black;
+      background-color: #8BCE94;
+      color: white;
       font-size: 1.15em;
       cursor: pointer;
       padding: 4px 30px; }
@@ -216,8 +220,8 @@ h2 {
       /* Everything else */
       border: 2px solid #308241;
       border-radius: 3.5px;
-      background-color: #DBDBDF;
-      color: black;
+      background-color: #8BCE94;
+      color: white;
       font-size: 1.15em;
       cursor: pointer;
       background-color: #68B180;
@@ -235,20 +239,16 @@ h2 {
   /* Safari 3-4, also probably droppable */
   box-sizing: border-box;
   /* Everything else */
-  border: 2.5px solid #68B180;
-  margin: 10px auto; }
+  margin: 10px auto;
+  display: block; }
+  .accounts table tr:nth-of-type(3) {
+    display: none; }
   .accounts table th, .accounts table td {
-    border-bottom: 2.5px solid #68B180;
-    border-right: 2.5px solid #68B180;
+    border: 2.5px solid #68B180;
     padding: 5px; }
   .accounts table td {
     font-size: 1.25em;
     font-family: "jaf-bernina-sans-comp", sans-serif; }
-  .accounts table .blank_account {
-    width: 242%;
-    display: none; }
-    .accounts table .blank_account th, .accounts table .blank_account td {
-      width: 500px; }
 .accounts .accounts_display {
   width: 83%; }
 
@@ -299,8 +299,8 @@ h2 {
     /* Everything else */
     border: 2px solid #308241;
     border-radius: 3.5px;
-    background-color: #DBDBDF;
-    color: black;
+    background-color: #8BCE94;
+    color: white;
     font-size: 1.15em;
     cursor: pointer;
     font-size: 0.89em;
@@ -380,8 +380,8 @@ h2 {
       /* Everything else */
       border: 2px solid #308241;
       border-radius: 3.5px;
-      background-color: #DBDBDF;
-      color: black;
+      background-color: #8BCE94;
+      color: white;
       font-size: 1.15em;
       cursor: pointer; }
     .p2p_payments .choice a {
@@ -419,7 +419,8 @@ h2 {
       margin: 0 20% 0 45%; }
 
   .logout {
-    float: right; }
+    float: right;
+    padding: 7px 20px; }
 
   .message_center {
     text-align: center;
@@ -427,7 +428,8 @@ h2 {
     .message_center a:nth-of-type(1) {
       padding: 3px 40%; }
     .message_center a:nth-of-type(2) {
-      padding: 3px 20%; }
+      padding: 3px 15%;
+      margin: 0 2%; }
 
   nav {
     -moz-box-sizing: border-box;
@@ -437,34 +439,24 @@ h2 {
     box-sizing: border-box;
     /* Everything else */
     width: 100%;
-    height: 100%;
     display: block; }
     nav ul {
       width: 100%;
-      margin: 10px 0;
-      opacity: 1; }
+      margin: 10px 0 0 0;
+      opacity: 1;
+      padding: 0;
+      padding-bottom: 20px; }
       nav ul li {
-        background-color: #D5D5E0;
-        border-top: 2px solid #8BCE94;
-        border-bottom: none;
-        border-left: 2px solid #8BCE94;
-        border-right: 2px solid #8BCE94;
-        border-radius: 5px;
+        display: block;
+        background-color: #6DBE4E;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
         min-height: 21px;
+        margin: 20px 0.6%;
         float: left; }
         nav ul li a {
-          font-size: 1.19875em; }
+          font-size: 1.0625em; }
       nav ul .page_displayed {
-        display: none; }
-
-  .accounts table {
-    width: 90%;
-    min-height: 150px; }
-    .accounts table .blank_account {
-      display: block;
-      transition: display 1000ms; }
-
-  .accounts_display {
-    width: 83%; } }
+        display: none; } }
 
 /*# sourceMappingURL=style.css.map */
