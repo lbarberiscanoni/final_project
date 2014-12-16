@@ -568,7 +568,7 @@ h2 {
 				}
 			}
 
-			li:hover {
+			li:hover:not(.page_displayed) {
 				height: 40px;
 			}
 

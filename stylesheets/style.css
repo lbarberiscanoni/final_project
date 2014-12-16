@@ -532,7 +532,7 @@ h2 {
           transition: padding-top 200ms; }
         nav ul li a:hover {
           padding-top: 20px; }
-      nav ul li:hover {
+      nav ul li:hover:not(.page_displayed) {
         height: 40px; }
       nav ul .page_displayed {
         font-size: 140%;
