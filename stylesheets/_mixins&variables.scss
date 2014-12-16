@@ -1,0 +1,93 @@
+@mixin border-box {
+   -moz-box-sizing: border-box;   /* Firefox 1, probably can drop this */
+   -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;   /* Everything else */
+}
+
+@mixin button {
+	text-decoration: none;
+	@include border-box;
+	border: 2px solid $green1;
+	border-radius: 3.5px;
+	background-color: $green2;
+	color: white;
+	font-size: 1.15em;
+	cursor: pointer;
+}
+
+@mixin app_button {
+	@include button;
+	background-color: $green6;
+	font-weight: bold;
+	border: 3px solid $green1;
+}
+
+@mixin form_button {
+	@include button;
+	font-size: $option_text;
+	border: 3px solid $grey1;
+	background-color: $green4;
+}
+
+@mixin segment {
+	background-color: $green5;		
+	padding: 5px;
+}
+
+@mixin nav_link {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: $label;
+}
+
+@mixin explain_p {
+	font-size: $principal/$option_text;	
+	line-height: $principal;
+}
+
+@mixin flapping_section {
+	background-color: $green5;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	height: 40px;
+	margin: 20px 0.5% 0 0.5%;
+}
+
+$green1: #308241;
+
+$green2: #8BCE94;
+
+$green3: #16923B;
+
+$green4: #88C873;
+
+$green5: #6DBE4E;
+
+$green6: #68B180;
+
+$grey1: #9797A8;
+
+$grey2: #D5D5E0;
+
+$grey3: #BABAC2;
+
+$grey4: #DBDBDF;
+
+$grey5: #BABAC2;
+
+$grey6: #DBDBDF;
+
+$principal: 1.5em;
+
+$label: 1.25em;
+
+$phi: 1.618033988749894848;	
+
+$option_text: 0.89em;
+
+$font_a: "ff-basic-gothic-web-pro",sans-serif;
+
+$font_b: "jaf-bernina-sans",sans-serif;
+
+$font_c: "jaf-bernina-sans-comp",sans-serif;

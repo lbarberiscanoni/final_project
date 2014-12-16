@@ -102,12 +102,10 @@ nav {
   box-sizing: border-box;
   /* Everything else */
   width: 100%;
-  height: 0;
   display: none; }
   nav ul {
     background-color: #6DBE4E;
-    padding: 5px;
-    opacity: 0; }
+    padding: 5px; }
     nav ul li {
       margin: 20px auto;
       border-bottom: 2px solid #308241;
@@ -119,8 +117,6 @@ nav {
         font-size: 1.25em;
         padding: 5px;
         margin-bottom: 10px; }
-      nav ul li a:hover {
-        z-index: 3; }
 
 .main {
   width: 90%;
@@ -207,6 +203,7 @@ h2 {
       display: block;
       width: 100%;
       height: 30px;
+      font-size: 0.89em;
       background-color: green;
       color: white;
       border: none;
@@ -217,8 +214,6 @@ h2 {
       width: 100%;
       height: 50px;
       transition: all 300ms ease; }
-      .bottom_wrapper .products .hidden p {
-        text-align: center; }
 
 .container {
   margin: 0 auto; }
@@ -506,25 +501,23 @@ h2 {
     /* Safari 3-4, also probably droppable */
     box-sizing: border-box;
     /* Everything else */
-    width: 100%;
-    height: 100%;
-    display: inline-block; }
+    display: inline-block;
+    margin: 10px 0 0 0; }
     nav ul {
-      margin: 10px auto 0 auto;
-      opacity: 1;
       padding: 0;
       padding-bottom: 20px; }
       nav ul li {
         background-color: #6DBE4E;
         border-bottom-right-radius: 6px;
         border-bottom-left-radius: 6px;
-        min-height: 21px;
-        margin: 20px 0.6%;
-        float: left; }
+        height: 40px;
+        margin: 20px 0.5% 0 0.5%;
+        float: left;
+        width: 15.6%; }
         nav ul li a {
-          font-size: 1.0625em; }
-      nav ul .page_displayed {
-        display: none; }
+          font-size: 1.0625em;
+          display: block;
+          text-align: center; }
 
   .accounts {
     width: 90%; }
@@ -553,5 +546,8 @@ h2 {
   .p2p_payments h2:nth-of-type(2) {
     margin: 10px auto 20px auto;
     text-align: center; } }
+@media screen and (min-width: 888px) {
+  nav ul li {
+    height: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
