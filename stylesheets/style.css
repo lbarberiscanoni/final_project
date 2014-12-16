@@ -429,6 +429,13 @@ h2 {
       width: 90%;
       margin: 0 auto;
       padding: 2%; } }
+@media screen and (min-width: 390px) {
+  .transfers .transfer_form {
+    max-width: 350px; }
+    .transfers .transfer_form label:nth-of-type(5) {
+      padding-right: 0; }
+    .transfers .transfer_form label:nth-of-type(6) {
+      padding-left: 0; } }
 @media screen and (min-width: 520px) {
   body {
     font-size: 92%; }
@@ -492,7 +499,8 @@ h2 {
       border: 3.5px solid #68B180; }
 
   .transfers .transfer_form {
-    width: 80%; }
+    max-width: 500px;
+    width: 85%; }
     .transfers .transfer_form label:nth-of-type(5) {
       padding-right: 0; }
     .transfers .transfer_form label:nth-of-type(6) {

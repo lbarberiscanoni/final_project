@@ -520,6 +520,23 @@ h2 {
 	}
 }
 
+@media screen and (min-width: 390px) {
+	.transfers {
+
+		.transfer_form {
+			max-width: 350px;
+
+			label:nth-of-type(5) {
+				padding-right: 0;
+			}
+
+			label:nth-of-type(6) {
+				padding-left: 0;	
+			}
+		}
+	}
+}
+
 @media screen and (min-width: 520px) {
 
 //// Universal /////
@@ -613,7 +630,9 @@ h2 {
 	.transfers {
 
 		.transfer_form {
-			width: 80%;
+			max-width: 500px;
+			width: 85%;
+
 			label:nth-of-type(5) {
 				padding-right: 0;
 			}
