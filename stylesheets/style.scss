@@ -286,6 +286,16 @@ h2 {
 				margin: 22px 0;
 			}
 
+		select {
+			background-color: $grey1;
+			font-size: 80%;
+			color: white;
+			border: 2px solid $green1;
+			width: 130px;
+			height: 30px;
+			font-size: $option_text;
+		}
+
 		label:nth-of-type(5) {
 			padding-right: 30px;
 		}
@@ -310,6 +320,7 @@ h2 {
 			margin-top: 10px;
 			float: right;
 			transition: background-color 300ms;
+			padding: 10px 5%;
 		}
 
 		button:hover {
@@ -345,6 +356,16 @@ h2 {
 	.bills_expanded {	
 		float: right;
 	}
+
+	select {
+		background-color: $grey1;
+		font-size: 80%;
+		color: white;
+		border: 2px solid $green1;
+		width: 130px;
+		height: 44px;
+		font-size: $option_text;
+	}
 }
 
 ////// Alerts ////////
@@ -371,14 +392,14 @@ h2 {
 	}
 
 	.alerts {
-		margin: 20px auto;
-		border: 1px solid black;
+		margin: 30px auto;
+
 
 		table {
 			@include border-box;
 			border: 2.5px solid $green6;
-			margin: 10px auto;	
-			width: 70%;
+			margin: 10px auto;
+			width: 75%;	
 
 			th, td {
 				border-bottom: 2.5px solid $green6;
@@ -389,10 +410,22 @@ h2 {
 			td {
 				font-size: $label;
 			}
+
+			.alert_new {
+				visibility: collapse;
+			}
+
+			.show {
+				visibility: visible;
+			}
+
+			.hide {
+				visibility: collapse;
+			}
 		}
 
 		.newAlert {
-			float: left;
+			float: left;			
 			padding: 2%;
 		}
 
@@ -410,15 +443,15 @@ h2 {
 	button:hover {
 		background-color: $green1;
 	}
-
 	.contacts {
-		margin: 20px auto;
-		max-width: 597px;
+		margin: 0 auto;
+		clear: right;
 
 		table {
 			@include border-box;
 			border: 2.5px solid $green6;
 			margin: 10px auto;	
+			width: 75%;
 
 			th, td {
 				border-bottom: 2.5px solid $green6;
@@ -448,6 +481,18 @@ h2 {
 				border: 2px solid $green1;
 				width: 130px;
 				height: 44px;
+			}
+
+			.contact_new {
+				visibility: collapse;
+			}
+
+			.show {
+				visibility: visible;
+			}
+
+			.hide {
+				visibility: collapse;
 			}				
 		}		
 
@@ -539,6 +584,7 @@ h2 {
 }
 
 @media screen and (min-width: 321px) {
+
 	.accounts {
 		width: 90%;
 		margin: 0 auto;
@@ -552,6 +598,7 @@ h2 {
 }
 
 @media screen and (min-width: 390px) {
+
 	.transfers {
 
 		.transfer_form {
@@ -564,6 +611,30 @@ h2 {
 			label:nth-of-type(6) {
 				padding-left: 0;	
 			}
+		}
+	}
+}
+
+@media screen and (min-width: 450px) {
+
+	.alerts {
+
+		button:nth-of-type(1){
+			margin-left: 4%;
+			margin-bottom: 30px;
+		}
+
+		button:nth-of-type(2){
+			margin-right: 4%;
+			margin-bottom: 30px;
+		}
+	}
+
+	.contacts {
+
+		button {
+			margin-right: 6%;
+			margin-bottom: 30px;
 		}
 	}
 }
@@ -707,6 +778,30 @@ h2 {
 		h2:nth-of-type(2) {
 			margin: 10px auto 20px auto;
 			text-align: center;
+		}
+	}
+}
+
+@media screen and (min-width: 700px) {
+
+	.alerts {
+
+		button:nth-of-type(1){
+			margin-left: 12%;
+			margin-bottom: 30px;
+		}
+
+		button:nth-of-type(2){
+			margin-right: 12%;
+			margin-bottom: 30px;
+		}
+	}
+
+	.contacts {
+
+		button {
+			margin-right: 12%;
+			margin-bottom: 30px;
 		}
 	}
 }

@@ -328,6 +328,14 @@ h2 {
   font-size: 1.125em; }
   .transfers .transfer_form .transfer:not(:nth-of-type(1)) {
     margin: 22px 0; }
+  .transfers .transfer_form select {
+    background-color: #9797A8;
+    font-size: 80%;
+    color: white;
+    border: 2px solid #308241;
+    width: 130px;
+    height: 30px;
+    font-size: 0.89em; }
   .transfers .transfer_form label:nth-of-type(5) {
     padding-right: 30px; }
   .transfers .transfer_form label:nth-of-type(6) {
@@ -356,7 +364,8 @@ h2 {
     background-color: #88C873;
     margin-top: 10px;
     float: right;
-    transition: background-color 300ms; }
+    transition: background-color 300ms;
+    padding: 10px 5%; }
   .transfers .transfer_form button:hover {
     background-color: #308241; }
 
@@ -375,6 +384,14 @@ h2 {
     float: left; }
   .bills .bills_expanded {
     float: right; }
+  .bills select {
+    background-color: #9797A8;
+    font-size: 80%;
+    color: white;
+    border: 2px solid #308241;
+    width: 130px;
+    height: 44px;
+    font-size: 0.89em; }
 
 .account_alerts h1 {
   line-height: 1.3em; }
@@ -389,8 +406,7 @@ h2 {
     font-weight: bold;
     font-size: 1em; }
 .account_alerts .alerts {
-  margin: 20px auto;
-  border: 1px solid black; }
+  margin: 30px auto; }
   .account_alerts .alerts table {
     -moz-box-sizing: border-box;
     /* Firefox 1, probably can drop this */
@@ -400,13 +416,19 @@ h2 {
     /* Everything else */
     border: 2.5px solid #68B180;
     margin: 10px auto;
-    width: 70%; }
+    width: 75%; }
     .account_alerts .alerts table th, .account_alerts .alerts table td {
       border-bottom: 2.5px solid #68B180;
       border-right: 2.5px solid #68B180;
       padding: 5px; }
     .account_alerts .alerts table td {
       font-size: 1.25em; }
+    .account_alerts .alerts table .alert_new {
+      visibility: collapse; }
+    .account_alerts .alerts table .show {
+      visibility: visible; }
+    .account_alerts .alerts table .hide {
+      visibility: collapse; }
   .account_alerts .alerts .newAlert {
     float: left;
     padding: 2%; }
@@ -431,8 +453,8 @@ h2 {
 .account_alerts button:hover {
   background-color: #308241; }
 .account_alerts .contacts {
-  margin: 20px auto;
-  max-width: 597px; }
+  margin: 0 auto;
+  clear: right; }
   .account_alerts .contacts table {
     -moz-box-sizing: border-box;
     /* Firefox 1, probably can drop this */
@@ -441,7 +463,8 @@ h2 {
     box-sizing: border-box;
     /* Everything else */
     border: 2.5px solid #68B180;
-    margin: 10px auto; }
+    margin: 10px auto;
+    width: 75%; }
     .account_alerts .contacts table th, .account_alerts .contacts table td {
       border-bottom: 2.5px solid #68B180;
       border-right: 2.5px solid #68B180;
@@ -462,6 +485,12 @@ h2 {
       border: 2px solid #308241;
       width: 130px;
       height: 44px; }
+    .account_alerts .contacts table .contact_new {
+      visibility: collapse; }
+    .account_alerts .contacts table .show {
+      visibility: visible; }
+    .account_alerts .contacts table .hide {
+      visibility: collapse; }
   .account_alerts .contacts .newContact {
     float: right;
     padding: 2%; }
@@ -537,6 +566,17 @@ h2 {
       padding-right: 0; }
     .transfers .transfer_form label:nth-of-type(6) {
       padding-left: 0; } }
+@media screen and (min-width: 450px) {
+  .alerts button:nth-of-type(1) {
+    margin-left: 4%;
+    margin-bottom: 30px; }
+  .alerts button:nth-of-type(2) {
+    margin-right: 4%;
+    margin-bottom: 30px; }
+
+  .contacts button {
+    margin-right: 6%;
+    margin-bottom: 30px; } }
 @media screen and (min-width: 520px) {
   body {
     font-size: 92%; }
@@ -628,6 +668,17 @@ h2 {
   .p2p_payments h2:nth-of-type(2) {
     margin: 10px auto 20px auto;
     text-align: center; } }
+@media screen and (min-width: 700px) {
+  .alerts button:nth-of-type(1) {
+    margin-left: 12%;
+    margin-bottom: 30px; }
+  .alerts button:nth-of-type(2) {
+    margin-right: 12%;
+    margin-bottom: 30px; }
+
+  .contacts button {
+    margin-right: 12%;
+    margin-bottom: 30px; } }
 @media screen and (min-width: 888px) {
   nav ul li {
     height: 25px; } }

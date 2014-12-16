@@ -57,16 +57,23 @@
 						<th>Contact Nickname</th>
 						<th>Active</th>
 					</tr>
-					<tr>
+					<tr class="alert1">
 						<td>Important</td>
 						<td>Every Month</td>
 						<td>Lorenzo</td>
+						<td>Yes</td>
+					</tr>
+					<tr class="alert2 alert_new">
+						<td>Urgent</td>
+						<td>Weekly</td>
+						<td>Lorenzo2</td>
 						<td>Yes</td>
 					</tr>
 				</table>
 				<button class="newAlert">Set up a new Alert</button>
 				<button class="deactivate">Deactivate All Alerts</button>
 			</div>
+			<br>
 			<div class="contacts">
 				<h2>Manage your Contacts</h2>
 				<table>
@@ -87,7 +94,21 @@
 						<td>Lorenzo1</td>
 						<td>lorenzo@gmail.com</td>
 						<td>
-							<button class="edit">Delete Contact</button>
+							<button class="delete">Delete Contact</button>
+						</td>
+					</tr>
+					<tr class="contact_new">
+						<td>
+							<select>
+								<option>Edit Contact</option>
+								<option>Contact Name</option>
+								<option>E-email Address</option>
+							</select>
+						</td>
+						<td>Lorenzo2</td>
+						<td>lorenzo@gmail.com</td>
+						<td>
+							<button class="delete">Delete Contact</button>
 						</td>
 					</tr>
 				</table>
@@ -157,5 +178,6 @@
 	</div>
 	<script src="scripts/dropdown_menu.js"></script>
 	<script src="scripts/button_toggle.js"></script>
+	<script src="scripts/show_hide.js"></script>
 </body>	
 </html>		
