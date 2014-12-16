@@ -208,11 +208,11 @@ h2 {
       background-color: green;
       color: white;
       border: none;
-      border-bottom: 1px solid white; }
+      border-bottom: 1px solid white;
+      cursor: pointer; }
     .bottom_wrapper .products .hidden {
       display: none;
-      width: 100%;
-      transition: all 300ms ease; }
+      width: 100%; }
       .bottom_wrapper .products .hidden a {
         padding: 5px 2%;
         margin: 15px 2%;
@@ -388,22 +388,31 @@ h2 {
   .account_alerts .alert_info span {
     font-weight: bold;
     font-size: 1em; }
-.account_alerts .alerts table {
-  -moz-box-sizing: border-box;
-  /* Firefox 1, probably can drop this */
-  -webkit-box-sizing: border-box;
-  /* Safari 3-4, also probably droppable */
-  box-sizing: border-box;
-  /* Everything else */
-  border: 2.5px solid #68B180;
-  margin: 10px auto;
-  width: 70%; }
-  .account_alerts .alerts table th, .account_alerts .alerts table td {
-    border-bottom: 2.5px solid #68B180;
-    border-right: 2.5px solid #68B180;
-    padding: 5px; }
-  .account_alerts .alerts table td {
-    font-size: 1.25em; }
+.account_alerts .alerts {
+  margin: 20px auto;
+  border: 1px solid black; }
+  .account_alerts .alerts table {
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 2.5px solid #68B180;
+    margin: 10px auto;
+    width: 70%; }
+    .account_alerts .alerts table th, .account_alerts .alerts table td {
+      border-bottom: 2.5px solid #68B180;
+      border-right: 2.5px solid #68B180;
+      padding: 5px; }
+    .account_alerts .alerts table td {
+      font-size: 1.25em; }
+  .account_alerts .alerts .newAlert {
+    float: left;
+    padding: 2%; }
+  .account_alerts .alerts .deactivate {
+    float: right;
+    padding: 2%; }
 .account_alerts button {
   text-decoration: none;
   -moz-box-sizing: border-box;
@@ -418,10 +427,44 @@ h2 {
   color: white;
   font-size: 1.15em;
   cursor: pointer;
-  border-radius: 5px;
-  padding: 10px; }
+  border-radius: 5px; }
 .account_alerts button:hover {
   background-color: #308241; }
+.account_alerts .contacts {
+  margin: 20px auto;
+  max-width: 597px; }
+  .account_alerts .contacts table {
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 2.5px solid #68B180;
+    margin: 10px auto; }
+    .account_alerts .contacts table th, .account_alerts .contacts table td {
+      border-bottom: 2.5px solid #68B180;
+      border-right: 2.5px solid #68B180;
+      padding: 5px; }
+    .account_alerts .contacts table td {
+      font-size: 1.25em; }
+    .account_alerts .contacts table td:nth-of-type(3) {
+      word-wrap: break-word;
+      word-break: break-all; }
+    .account_alerts .contacts table button {
+      background-color: #9797A8;
+      font-size: 80%;
+      padding: 10px 10%; }
+    .account_alerts .contacts table select {
+      background-color: #9797A8;
+      font-size: 80%;
+      color: white;
+      border: 2px solid #308241;
+      width: 130px;
+      height: 44px; }
+  .account_alerts .contacts .newContact {
+    float: right;
+    padding: 2%; }
 
 .p2p_payments {
   width: 90%;
