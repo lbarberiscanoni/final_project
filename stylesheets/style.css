@@ -138,7 +138,7 @@ h2 {
   font-family: "jaf-bernina-sans", sans-serif;
   text-align: center; }
 
-.message_center {
+.message_center, .help {
   clear: both;
   width: 75%;
   max-width: 250px;
@@ -146,13 +146,13 @@ h2 {
   border: 5px solid #308241;
   border-radius: 5px;
   min-height: 110px; }
-  .message_center h2 {
+  .message_center h2, .help h2 {
     background-color: #6DBE4E;
     padding: 5px;
     padding: 5px 9%;
     text-align: center;
     margin: 0 auto; }
-  .message_center a {
+  .message_center a, .help a {
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -169,17 +169,30 @@ h2 {
     background-color: #8BCE94;
     color: white;
     font-size: 1.15em;
-    cursor: pointer; }
-  .message_center a:nth-of-type(1) {
+    cursor: pointer;
+    display: block; }
+  .message_center a:nth-of-type(1), .help a:nth-of-type(1) {
     margin: 15px 2%;
     padding: 2px 36.035%;
     display: block;
     text-align: center; }
-  .message_center a:nth-of-type(2) {
+  .message_center a:nth-of-type(2), .help a:nth-of-type(2) {
     margin: 0 2% 15px 2%;
     padding: 2px 3%;
     display: block;
     text-align: center; }
+
+.help {
+  min-height: 900px; }
+  .help a:nth-of-type(1), .help a:nth-of-type(2) {
+    padding: 5px 2%;
+    margin: 15px 2%; }
+  .help a:nth-of-type(3) {
+    padding: 5px 15.6%;
+    margin: 15px 2%; }
+  .help a:nth-of-type(4) {
+    padding: 5px 10%;
+    margin: 15px 2%; }
 
 .container {
   margin: 0 auto; }
