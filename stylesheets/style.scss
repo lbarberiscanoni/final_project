@@ -19,6 +19,7 @@ body {
 
 .menu, .top img, .logout {
 	float: left;
+	transition: background-color 200ms;
 }
 
 .menu {
@@ -33,6 +34,10 @@ body {
 .logout {
 	@include button;
 	padding: 4px 5px;
+}
+
+.menu:hover, .logout:hover {
+	background-color: $green1;
 }
 
 nav {
@@ -52,7 +57,7 @@ nav {
 				@include nav_link;
 				padding: 5px;
 				margin-bottom: 10px;
-			}
+			}			
 		}
 	}
 }
@@ -97,6 +102,11 @@ h2 {
 		@include nav_link;
 		@include button;
 		display: block;
+		transition: background-color 200ms;
+	}
+
+	a:hover {
+		background-color: $green1;
 	}
 
 	a:nth-of-type(1) {
@@ -118,7 +128,6 @@ h2 {
 	border: 1px solid black;
 	width: 80%;
 	margin: 0 auto;
-	// min-height: 300px;
 
 	.help {
 		min-height: 200px;
@@ -306,6 +315,11 @@ h2 {
 			@include form_button;
 			margin-top: 10px;
 			float: right;
+			transition: background-color 300ms;
+		}
+
+		button:hover {
+			background-color: $green1;
 		}
 	}
 }
@@ -540,17 +554,35 @@ h2 {
 				@include flapping_section;
 				float: left;
 				width: 15.6%;
+				transition: height 200ms;
+				display: block;
 
 				a {
 					font-size: $label * 0.85;
 					display: block;
 					text-align: center;
+					transition: padding-top 200ms;
 				}
 
+				a:hover {
+					padding-top: 20px;
+				}
+			}
+
+			li:hover {
+				height: 40px;
 			}
 
 			.page_displayed {
-				
+				font-size: 140%;
+				height: 120%;
+				border-bottom-right-radius: 6px;
+				border-bottom: 5px solid $green1;
+				border-bottom-left-radius: 6px;
+
+				a {
+					padding-top: 10px;
+				}
 			}
 		}
 	}
