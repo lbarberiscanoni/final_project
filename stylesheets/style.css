@@ -138,7 +138,7 @@ h2 {
   font-family: "jaf-bernina-sans", sans-serif;
   text-align: center; }
 
-.message_center, .help {
+.message_center, .help, .products {
   clear: both;
   width: 75%;
   max-width: 250px;
@@ -146,13 +146,13 @@ h2 {
   border: 5px solid #308241;
   border-radius: 5px;
   min-height: 110px; }
-  .message_center h2, .help h2 {
+  .message_center h2, .help h2, .products h2 {
     background-color: #6DBE4E;
     padding: 5px;
     padding: 5px 9%;
     text-align: center;
     margin: 0 auto; }
-  .message_center a, .help a {
+  .message_center a, .help a, .products a {
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -171,28 +171,54 @@ h2 {
     font-size: 1.15em;
     cursor: pointer;
     display: block; }
-  .message_center a:nth-of-type(1), .help a:nth-of-type(1) {
+  .message_center a:nth-of-type(1), .help a:nth-of-type(1), .products a:nth-of-type(1) {
     margin: 15px 2%;
     padding: 2px 36.035%;
     display: block;
     text-align: center; }
-  .message_center a:nth-of-type(2), .help a:nth-of-type(2) {
+  .message_center a:nth-of-type(2), .help a:nth-of-type(2), .products a:nth-of-type(2) {
     margin: 0 2% 15px 2%;
     padding: 2px 3%;
     display: block;
     text-align: center; }
 
-.help {
-  min-height: 900px; }
-  .help a:nth-of-type(1), .help a:nth-of-type(2) {
-    padding: 5px 2%;
-    margin: 15px 2%; }
-  .help a:nth-of-type(3) {
-    padding: 5px 15.6%;
-    margin: 15px 2%; }
-  .help a:nth-of-type(4) {
-    padding: 5px 10%;
-    margin: 15px 2%; }
+.bottom_wrapper {
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto; }
+  .bottom_wrapper .help {
+    min-height: 200px;
+    float: left;
+    display: block; }
+    .bottom_wrapper .help a:nth-of-type(1), .bottom_wrapper .help a:nth-of-type(2) {
+      padding: 5px 2%;
+      margin: 15px 2%; }
+    .bottom_wrapper .help a:nth-of-type(3) {
+      padding: 5px 15.6%;
+      margin: 15px 2%; }
+    .bottom_wrapper .help a:nth-of-type(4) {
+      padding: 5px 10%;
+      margin: 15px 2%; }
+  .bottom_wrapper .products {
+    min-height: 150px;
+    float: left;
+    display: block; }
+    .bottom_wrapper .products button {
+      display: block;
+      width: 100%;
+      height: 30px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-bottom: 1px solid white; }
+    .bottom_wrapper .products .hidden {
+      display: none;
+      padding: 20px 0 0 0;
+      width: 100%;
+      height: 50px;
+      transition: all 300ms ease; }
+      .bottom_wrapper .products .hidden p {
+        text-align: center; }
 
 .container {
   margin: 0 auto; }
