@@ -51,51 +51,49 @@ body {
   color: white;
   background-color: #16923B; }
 
-.top {
-  margin: 15px auto 0 auto;
-  min-height: 29px; }
-
-.menu, .top img, .logout {
-  float: left;
-  transition: background-color 200ms; }
-
-.menu {
-  text-decoration: none;
-  -moz-box-sizing: border-box;
-  /* Firefox 1, probably can drop this */
-  -webkit-box-sizing: border-box;
-  /* Safari 3-4, also probably droppable */
-  box-sizing: border-box;
-  /* Everything else */
-  border: 2px solid #308241;
-  border-radius: 3.5px;
-  background-color: #8BCE94;
-  color: white;
-  font-size: 1.15em;
-  cursor: pointer; }
-
-.top img {
-  min-height: 30px;
-  margin: 0px 14.3%; }
-
-.logout {
-  text-decoration: none;
-  -moz-box-sizing: border-box;
-  /* Firefox 1, probably can drop this */
-  -webkit-box-sizing: border-box;
-  /* Safari 3-4, also probably droppable */
-  box-sizing: border-box;
-  /* Everything else */
-  border: 2px solid #308241;
-  border-radius: 3.5px;
-  background-color: #8BCE94;
-  color: white;
-  font-size: 1.15em;
-  cursor: pointer;
-  padding: 4px 5px; }
-
-.menu:hover, .logout:hover {
-  background-color: #308241; }
+.upper_wrapper {
+  background-color: #DBDBDF;
+  height: 52px; }
+  .upper_wrapper .menu, .upper_wrapper img, .upper_wrapper .logout {
+    float: left;
+    transition: background-color 200ms;
+    margin: 6px 4.2%; }
+  .upper_wrapper .menu {
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 2px solid #308241;
+    border-radius: 3.5px;
+    background-color: #8BCE94;
+    color: white;
+    font-size: 1.15em;
+    cursor: pointer;
+    padding: 2% 9%; }
+  .upper_wrapper img {
+    background-color: white; }
+  .upper_wrapper .logo {
+    display: none; }
+  .upper_wrapper .logout {
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 2px solid #308241;
+    border-radius: 3.5px;
+    background-color: #8BCE94;
+    color: white;
+    font-size: 1.15em;
+    cursor: pointer;
+    padding: 2.5% 9%; }
+  .upper_wrapper .menu:hover, .upper_wrapper .logout:hover {
+    background-color: #308241; }
 
 nav {
   -moz-box-sizing: border-box;
@@ -173,50 +171,44 @@ h2 {
     transition: background-color 200ms; }
   .message_center a:hover, .help a:hover, .products a:hover {
     background-color: #308241; }
-  .message_center a:nth-of-type(1), .help a:nth-of-type(1), .products a:nth-of-type(1) {
+
+.message_center a:nth-of-type(1) {
+  margin: 15px 2%;
+  padding: 2px 36.035%;
+  display: block;
+  text-align: center; }
+.message_center a:nth-of-type(2) {
+  margin: 0 2% 15px 2%;
+  padding: 2px 3%;
+  display: block;
+  text-align: center; }
+
+.help {
+  min-height: 350px; }
+  .help a {
+    padding: 5px 2%;
     margin: 15px 2%;
-    padding: 2px 36.035%;
-    display: block;
-    text-align: center; }
-  .message_center a:nth-of-type(2), .help a:nth-of-type(2), .products a:nth-of-type(2) {
-    margin: 0 2% 15px 2%;
-    padding: 2px 3%;
-    display: block;
     text-align: center; }
 
-.bottom_wrapper {
-  border: 1px solid black;
-  width: 80%;
-  margin: 0 auto; }
-  .bottom_wrapper .help {
-    min-height: 350px;
-    float: left;
-    display: block; }
-    .bottom_wrapper .help a {
+.products {
+  max-height: 520px; }
+  .products button {
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 0.89em;
+    background-color: green;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    cursor: pointer; }
+  .products .hidden {
+    display: none;
+    width: 100%; }
+    .products .hidden a {
       padding: 5px 2%;
       margin: 15px 2%;
       text-align: center; }
-  .bottom_wrapper .products {
-    max-height: 520px;
-    float: left;
-    display: block; }
-    .bottom_wrapper .products button {
-      display: block;
-      width: 100%;
-      height: 30px;
-      font-size: 0.89em;
-      background-color: green;
-      color: white;
-      border: none;
-      border-bottom: 1px solid white;
-      cursor: pointer; }
-    .bottom_wrapper .products .hidden {
-      display: none;
-      width: 100%; }
-      .bottom_wrapper .products .hidden a {
-        padding: 5px 2%;
-        margin: 15px 2%;
-        text-align: center; }
 
 .container {
   margin: 0 auto; }
@@ -300,9 +292,6 @@ h2 {
     margin: 10px auto; }
     .accounts table:nth-of-type(2) th, .accounts table:nth-of-type(2) td {
       padding: 10px; }
-
-.top {
-  width: 73%; }
 
 .transfers h1 {
   width: 92%;
@@ -567,6 +556,9 @@ h2 {
     .transfers .transfer_form label:nth-of-type(6) {
       padding-left: 0; } }
 @media screen and (min-width: 450px) {
+  .upper_wrapper .logo {
+    margin-left: 15%; }
+
   .alerts button:nth-of-type(1) {
     margin-left: 4%;
     margin-bottom: 30px; }
@@ -581,25 +573,31 @@ h2 {
   body {
     font-size: 92%; }
 
+  .upper_wrapper {
+    height: 47px; }
+    .upper_wrapper .menu {
+      display: none; }
+    .upper_wrapper .logo_small {
+      display: none; }
+    .upper_wrapper .logo {
+      display: inline-block;
+      width: 295px;
+      border: 1px solid black;
+      margin-left: 10%; }
+      .upper_wrapper .logo h1 {
+        font-weight: bold;
+        margin: 0;
+        padding-top: 4px;
+        text-align: left;
+        font-size: 1.6em; }
+    .upper_wrapper .logout {
+      padding: 7px 45px;
+      float: right;
+      margin: 6px 2%; }
+
   .main {
     width: 80%;
     margin: 15px auto; }
-
-  .menu {
-    display: none; }
-
-  .top {
-    margin: 5px auto 5px auto;
-    width: 90%; }
-    .top img {
-      margin: 0 20% 0 45%; }
-
-  .logout {
-    float: right;
-    padding: 7px 20px; }
-
-  .message_center {
-    text-align: center; }
 
   nav {
     -moz-box-sizing: border-box;
@@ -669,6 +667,9 @@ h2 {
     margin: 10px auto 20px auto;
     text-align: center; } }
 @media screen and (min-width: 700px) {
+  .upper_wrapper .logo {
+    margin-left: 25%; }
+
   .alerts button:nth-of-type(1) {
     margin-left: 12%;
     margin-bottom: 30px; }
@@ -680,6 +681,9 @@ h2 {
     margin-right: 12%;
     margin-bottom: 30px; } }
 @media screen and (min-width: 888px) {
+  .upper_wrapper .logo {
+    margin-left: 40%; }
+
   nav ul li {
     height: 25px; } }
 
