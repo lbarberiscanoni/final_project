@@ -43,7 +43,7 @@
 
 @mixin explain_p {
 	font-size: $principal/$option_text;	
-	line-height: $principal;
+	line-height: 1.8em;
 }
 
 @mixin flapping_section {
