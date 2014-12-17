@@ -356,23 +356,25 @@ h2 {
     padding: 10px 5%; }
   .transfers .transfer_form button:hover {
     background-color: #308241; }
+  .transfers .transfer_form .confirm_transfer {
+    display: none; }
+  .transfers .transfer_form .show {
+    display: block; }
 
 .bill_pay h1 {
   margin: 15px 0; }
 .bill_pay h2 {
   margin: 15px 0; }
-
-.bills {
+.bill_pay .bills {
   width: 90%;
   max-width: 280px;
   margin: 30px auto;
-  margin-bottom: 20px;
-  border: 1px solid transparent; }
-  .bills .bills_regular {
+  margin-bottom: 20px; }
+  .bill_pay .bills .bills_regular {
     float: left; }
-  .bills .bills_expanded {
+  .bill_pay .bills .bills_expanded {
     float: right; }
-  .bills select {
+  .bill_pay .bills select {
     background-color: #9797A8;
     font-size: 80%;
     color: white;
@@ -380,6 +382,42 @@ h2 {
     width: 130px;
     height: 44px;
     font-size: 0.89em; }
+.bill_pay .payment {
+  margin: 30px auto;
+  max-width: 345px; }
+  .bill_pay .payment input {
+    padding: 8px 1%;
+    margin-top: 20px; }
+  .bill_pay .payment input[placeholder] {
+    font-size: 1em;
+    text-align: center; }
+  .bill_pay .payment button {
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    border: 2px solid #308241;
+    border-radius: 3.5px;
+    background-color: #8BCE94;
+    color: white;
+    font-size: 1.15em;
+    cursor: pointer;
+    padding: 8px 2%;
+    transition: background-color 300s;
+    margin-top: 20px; }
+  .bill_pay .payment button:hover {
+    background-color: #308241; }
+  .bill_pay .payment .confirm_payment {
+    display: none; }
+    .bill_pay .payment .confirm_payment .yes {
+      float: left; }
+    .bill_pay .payment .confirm_payment .no {
+      float: right; }
+  .bill_pay .payment .show {
+    display: block; }
 
 .account_alerts h1 {
   line-height: 1.3em; }
@@ -693,6 +731,9 @@ h2 {
       padding-right: 0; }
     .transfers .transfer_form label:nth-of-type(6) {
       padding-left: 0; }
+
+  .bill_pay .payment {
+    max-width: 323px; }
 
   .p2p_payments h2:nth-of-type(1) {
     line-height: 1.3em;
