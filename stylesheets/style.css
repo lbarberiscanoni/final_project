@@ -265,6 +265,20 @@ h2 {
       font-weight: bold;
       border: 3px solid #308241;
       padding: 6px; }
+  .container iframe.video_small {
+    position: absolute;
+    bottom: -80px;
+    left: 10px; }
+  .container iframe.video_medium {
+    display: none;
+    position: absolute;
+    bottom: -80px;
+    left: 200px; }
+  .container iframe.video_large {
+    display: none;
+    position: absolute;
+    bottom: -80px;
+    left: 350px; }
 
 .accounts {
   width: 100%; }
@@ -628,7 +642,10 @@ h2 {
 
   .contacts button {
     margin-right: 6%;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  .container iframe.video_small {
+    display: none; } }
 @media screen and (min-width: 520px) {
   body {
     font-size: 92%; }
@@ -747,7 +764,10 @@ h2 {
     font-size: 120%; } }
 @media screen and (min-width: 600px) {
   .message_center, .help, .products {
-    max-width: 250px; } }
+    max-width: 250px; }
+
+  .container iframe.video_medium {
+    display: block; } }
 @media screen and (min-width: 700px) {
   .upper_wrapper .logo {
     margin-left: 25%; }
@@ -805,6 +825,11 @@ h2 {
 
   .products {
     float: right;
-    margin: 25px 10% 25px 6%; } }
+    margin: 25px 10% 25px 6%; }
+
+  .container iframe.video_medium {
+    display: none; }
+  .container iframe.video_large {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

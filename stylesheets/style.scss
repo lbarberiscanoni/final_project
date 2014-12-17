@@ -208,6 +208,26 @@ h2 {
 			padding: 6px;
 		}
 	}
+
+	iframe.video_small {
+		position: absolute;
+		bottom: -80px;
+		left: 10px;
+	}
+
+	iframe.video_medium {
+		display: none;
+		position: absolute;
+		bottom: -80px;
+		left: 200px;
+	}
+
+	iframe.video_large {
+		display: none;
+		position: absolute;
+		bottom: -80px;
+		left: 350px;
+	}
 }
 
 ////// Accounts ////////
@@ -721,6 +741,13 @@ h2 {
 			margin-bottom: 30px;
 		}
 	}
+
+	.container {
+
+		iframe.video_small {
+			display: none;
+		}
+	}
 }
 
 @media screen and (min-width: 520px) {
@@ -921,6 +948,13 @@ h2 {
 	.message_center, .help, .products {
 		max-width: 250px;
 	}
+
+	.container {
+
+		iframe.video_medium {
+			display: block;
+		}
+	}
 }
 
 @media screen and (min-width: 700px) {
@@ -1027,6 +1061,17 @@ h2 {
 	.products {
 		float: right;
 		margin: 25px 10% 25px 6%;
+	}
+
+	.container {
+
+		iframe.video_medium {
+			display: none;
+		}
+
+		iframe.video_large {
+			display: block;
+		}
 	}
 }
 	
